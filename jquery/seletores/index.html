@@ -80,11 +80,11 @@
 
                     <h3>Carros</h3>
                     <ul class="cars_list">
-                        <li>Uno</li>
+                        <li>Uno  <span> - fiat</span></li>
                         <li>Palio</li>
-                        <li>Onix</li>
-                        <li>Fox</li>
-                        <li>Fiesta</li>
+                        <li>Onix <span> - gm</span> </li>
+                        <li></li>
+                        <li></li>
                     </ul>
     
                 </div>
@@ -94,7 +94,7 @@
                     <h3>Carros</h3>
                     <ul class="cars_list">
                         <li>Porsche</li>
-                        <li>Ferrari</li>
+                        <li>Ferrari <span> - italia</span></li>
                         <li>Land Rover</li>
                         <li>Lamborghini</li>
                         <li>Fusca</li>
@@ -131,6 +131,24 @@
 
             $(document).ready(function(){
 
+                // selecionando um elemento pelo seu conteudo
+                //$('.menu li a:contains(About)').css('outline', 'solid red 2px')
+
+                // selecionando um elemento que nao possui conteudo
+                /*
+                $('.cars_list li:empty').text('vazio').css({
+                    'background': 'red',
+                    'color': 'white'
+                });
+                */
+
+                // selecionando os elementos que possuem conteudo
+                //$('.cars_list li:parent').append('<span style="color: green"> - tem valor</span>')
+
+                $('.cars_list li:has(span)').animate({
+                    fontSize: '30px',
+                    opacity: 0.7
+                }, 2000)
 
             })
 
