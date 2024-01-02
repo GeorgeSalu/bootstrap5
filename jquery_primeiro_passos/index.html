@@ -7,18 +7,28 @@
 </head>
 <body>
 
-  <h1>esse é meu primeiro codigo jquery</h1>
+  <h1 id="title">esse é meu primeiro codigo jquery</h1>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
-    // maneira antiga de fazer codigo js
-    /*
-    window.onload = function() {
-      alert('minha pagina carregou')
-    } 
-    */ 
+    
+    function initPage() {
 
-    jQuery(document).ready(function() {
-      alert('minha pagina carregou com jquery')
+      alert('minha pagina carregou');
+      console.log('pagina ok');
+
+    }
+
+    function stylizeTitle() {
+
+      document.getElementById('title').style.color = 'red'
+
+    }
+
+    $(document).ready(function() {
+
+      initPage();
+      stylizeTitle();
+
     })
 
   </script>
