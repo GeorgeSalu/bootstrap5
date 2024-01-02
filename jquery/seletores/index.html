@@ -140,7 +140,22 @@
 
                     eval(`$('.cars_list li').${method}()`)
 
+                });
+
+                $('[type=radio]').change(function() {
+                    let value = $('input:checked').val();
+                    let gender = (value == 'M') ? 'masculino': 'feminino';
+
+                    alert(`voce selecionou o sexo ${gender}`)
+
+
                 })
+
+                // selecionando um botao
+                // $('#register :button').text()
+
+                // selecionando um checkbox
+                // $('#register :checkbox').trigger('click')
 
             })
 
