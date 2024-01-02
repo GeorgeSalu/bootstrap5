@@ -80,9 +80,9 @@
 
                     <h3>Carros</h3>
                     <ul class="cars_list">
-                        <li >Uno  <span> - fiat</span></li>
-                        <li>Palio</li>
-                        <li>Onix <span> - gm</span> </li>
+                        <li data-ano="1983">Uno  <span> - fiat</span></li>
+                        <li data-ano="1996">Palio</li>
+                        <li data-ano="2013">Onix <span> - gm</span> </li>
                         <li></li>
                         <li></li>
                     </ul>
@@ -93,11 +93,11 @@
 
                     <h3>Carros</h3>
                     <ul class="cars_list">
-                        <li>Porsche</li>
-                        <li>Ferrari <span> - italia</span></li>
-                        <li >Land Rover</li>
-                        <li>Lamborghini</li>
-                        <li>Fusca</li>
+                        <li data-ano="1931">Porsche</li>
+                        <li data-ano="1939">Ferrari <span> - italia</span></li>
+                        <li data-ano="1948">Land Rover</li>
+                        <li data-ano="1963">Lamborghini</li>
+                        <li data-ano="2003">Fusca</li>
                     </ul>
     
                 </div>
@@ -142,6 +142,20 @@
 
                 });
 
+                $.expr[':'].carsCentury21 = function(el) {
+
+                    return ($(el).data('ano') > 2000);
+                }
+
+                $.expr[':'].carsBeforeYear = $.expr.createPseudo(function(year) {
+
+                    return function(el) {
+                        return ($(el).data('ano') < year)
+                    }
+                })
+
+                // criando nosso proprio filtro
+                // $('.cars_list li:carsCentury21').css('font-size', '30px')
 
             })
 
