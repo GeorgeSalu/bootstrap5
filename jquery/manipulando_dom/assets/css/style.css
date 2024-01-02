@@ -104,6 +104,12 @@ header #logo {
     font-size: 1.2em;
 }
 
+.stylized_menu {
+    color: green !important;
+    text-decoration: underline !important;
+    font-size: 20px;
+}
+
 .container {
     max-width: 960px;
     margin: auto;

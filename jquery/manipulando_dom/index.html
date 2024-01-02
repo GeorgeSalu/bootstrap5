@@ -132,30 +132,33 @@
 
             $(document).ready(function(){
 
-                $('#toggle_cars').click(function() {
+                // adicionando uma classe
+                // $('header .menu ul li:last a').addClass('stylized_menu')
 
-                    let hiddenCars = $('.cars_list li:hidden').length;
-                    let method = (hiddenCars > 0) ? 'show' : 'hide';
+                // removendo uma classe
+                // $('header .menu ul li:last a').removeClass('stylized_menu')
 
 
-                    eval(`$('.cars_list li').${method}()`)
+                // alternando uma classe
+                // $(this).toggleClass('stylized_menu')
+
+                // verificando se um elemento possui uma classe
+                // $('header .menu ul li a').hasClass('stylized_menu')
+
+                $('header .menu ul li a').click(function(event) {
+
+                    event.preventDefault();
+
+                    $(this).toggleClass('stylized_menu')
 
                 });
 
-                $.expr[':'].carsCentury21 = function(el) {
+                $('p').each(function() {
 
-                    return ($(el).data('ano') > 2000);
-                }
-
-                $.expr[':'].carsBeforeYear = $.expr.createPseudo(function(year) {
-
-                    return function(el) {
-                        return ($(el).data('ano') < year)
+                    if($(this).hasClass('paragrafo')) {
+                        $(this).append(`<span style="color: red"> - eu tenho a classe</span>`)
                     }
                 })
-
-                // criando nosso proprio filtro
-                // $('.cars_list li:carsCentury21').css('font-size', '30px')
 
             })
 
