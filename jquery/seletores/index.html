@@ -80,7 +80,7 @@
 
                     <h3>Carros</h3>
                     <ul class="cars_list">
-                        <li>Uno  <span> - fiat</span></li>
+                        <li style="display: none;">Uno  <span> - fiat</span></li>
                         <li>Palio</li>
                         <li>Onix <span> - gm</span> </li>
                         <li></li>
@@ -95,13 +95,15 @@
                     <ul class="cars_list">
                         <li>Porsche</li>
                         <li>Ferrari <span> - italia</span></li>
-                        <li>Land Rover</li>
+                        <li style="display: none;">Land Rover</li>
                         <li>Lamborghini</li>
                         <li>Fusca</li>
                     </ul>
     
                 </div>
 
+                <button type="button" id="show_cars">Mostrar os carros escondidos</button>
+                <button type="button" id="hide_cars">Esconder os carros exibidos</button>
              
             </main>
 
@@ -131,7 +133,23 @@
 
             $(document).ready(function(){
 
+                // selecionando os elementos que estao "invisiveis"
+                // $('.cars_list li:hidden').show()
 
+                // selecionando os elementos visiveis
+                // $('.cars_list li:hidden').hide()
+
+                $('#show_cars').click(function() {
+
+                    $('.cars_list li:hidden').css('text-decoration', 'underline').show();
+                
+                })
+
+                $('#hide_cars').click(function() {
+
+                    $('.cars_list li:visible').hide();
+
+                })
 
             })
 
