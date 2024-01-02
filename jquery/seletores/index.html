@@ -75,34 +75,7 @@
 
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos id nam reprehenderit repudiandae officiis laboriosam, ipsum molestias corporis magni enim modi tempora iure blanditiis quo labore placeat at laudantium doloremque?Consequatur itaque odio ipsum soluta quas fugit quisquam, unde eum porro dolorem doloribus, nostrum expedita et adipisci vel distinctio fugiat voluptatem? Voluptatem quia aspernatur quaerat, laboriosam ratione ipsa doloremque adipisci.</p>
 
-                <div class="cars">
-
-                    <h3>Carros</h3>
-                    <ul class="cars_list">
-                        <li data-ano="1983">Uno <span> - Fiat</span></li>
-                        <li data-ano="1996">Palio</li>
-                        <li data-ano="2013">Ônix <span> - GM</span></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-    
-                </div>
-
-                <div class="cars">
-
-                    <h3>Carros</h3>
-                    <ul class="cars_list">
-                        <li data-ano="1931">Porsche</li>
-                        <li data-ano="1939">Ferrari <span> - Itália</span></li>
-                        <li data-ano="1948">Land Rover</li>
-                        <li data-ano="1963">Lamborghini</li>
-                        <li data-ano="2003">Fusca</li>
-                    </ul>
-    
-                </div>
-
-                <button type="button" id="toggle_cars">Exibir/Ocultar os carros</button>
-
+               
             </main>
 
         </section>
@@ -125,41 +98,25 @@
 
         </footer>
 
-        <script src="jquery.min.js"></script>
+        <script src="jquery-3.4.1.min.js"></script>
 
         <script type="text/javascript">
 
-            $(document).ready(function(){
+            // nome de tag -> $('h1').css('color', 'red');
+            // id $('#logo').html('negocios')
 
-                $('#toggle_cars').click(function(){
+            // selecionando pela classe
+            //$('.paragrafo').animate({
+            //    fontSize: '50px',
+            //    opacity: 0.7
+            //}, 5000)
 
-                    let hiddenCars = $('.cars_list li:hidden').length;
-                    let method = (hiddenCars > 0) ? 'show' : 'hide';
+            // seletor composto
+            // $('header nav.menu').css('border', 'solid 1px orange')
 
-                    eval(`$('.cars_list li').${method}()`);                    
+            // multiplos seletores
+            // $('form, section').css('backgroud-color','#ccc')
 
-                });
-
-                $.expr[':'].carsCentury21 = function(el) {
-
-                    return ($(el).data('ano') > 2000);
-
-                }
-
-                $.expr[':'].carsBeforeYear = $.expr.createPseudo(function(year){
-
-                    return function(el) {
-
-                        return ($(el).data('ano') < year);
-
-                    }
-
-                });
-
-                // Criando nosso próprio filtro
-                // $('.cars_list li:carsCentury21').css('font-size', '30px')
-
-            });
 
         </script>
 
