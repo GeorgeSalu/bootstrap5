@@ -80,7 +80,7 @@
 
                     <h3>Carros</h3>
                     <ul class="cars_list">
-                        <li style="display: none;">Uno  <span> - fiat</span></li>
+                        <li >Uno  <span> - fiat</span></li>
                         <li>Palio</li>
                         <li>Onix <span> - gm</span> </li>
                         <li></li>
@@ -95,15 +95,14 @@
                     <ul class="cars_list">
                         <li>Porsche</li>
                         <li>Ferrari <span> - italia</span></li>
-                        <li style="display: none;">Land Rover</li>
+                        <li >Land Rover</li>
                         <li>Lamborghini</li>
                         <li>Fusca</li>
                     </ul>
     
                 </div>
 
-                <button type="button" id="show_cars">Mostrar os carros escondidos</button>
-                <button type="button" id="hide_cars">Esconder os carros exibidos</button>
+                <button type="button" id="toggle_cars">exibir/esconder os carros</button>
              
             </main>
 
@@ -133,7 +132,20 @@
 
             $(document).ready(function(){
 
+                $('#toggle_cars').click(function() {
 
+                    let hiddenCars = $('.cars_list li:hidden').length;
+                    let method;
+
+                    if(hiddenCars > 0) {
+                        method = 'show';
+                    } else {
+                        method = 'hide';
+                    }
+
+                    eval(`$('.cars_list li').${method}()`)
+
+                })
 
             })
 
