@@ -135,13 +135,8 @@
                 $('#toggle_cars').click(function() {
 
                     let hiddenCars = $('.cars_list li:hidden').length;
-                    let method;
+                    let method = (hiddenCars > 0) ? 'show' : 'hide';
 
-                    if(hiddenCars > 0) {
-                        method = 'show';
-                    } else {
-                        method = 'hide';
-                    }
 
                     eval(`$('.cars_list li').${method}()`)
 
