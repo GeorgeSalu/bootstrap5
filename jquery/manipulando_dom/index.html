@@ -136,36 +136,25 @@
 
             $(document).ready(function(){
 
-                // adicionando um elemento ao final de outro
-                // $('.menu ul').append('<li><a href="#">news</a></li>')
+                // removendo elementos
+                // $('.cars_list li:eq(1)').remove()
 
-                // adicionando um elemento ao final de outro com outra syntaxe
-                // $('<li><a href="#">news2</a></li>').appendTo('.menu ul')
+                // removendo o conteudo do elemento
+                // $('.cars_list li:eq(1)').empty()
 
-                // adicionando um elemento no inciio de outro
-                // $('.menu ul').prepend('<li><a href="#">produtos</a></li>')
+                // removendo um elemento, mas mantendo seus eventos associados
+                // let txt = $('.paragrafo').detach();
 
-                // adicionando um elemento no inciio de outro em outra sintaxe
-                // $('<li><a href="#">produtos</a></li>').prependTo('.menu ul')
+                // removendo os elementos em volta de outro
+                // $('.cars_list li').unwrap();
 
-                // adicionando um elemento apos outro
-                // $('.paragrafo').after('<h2>Hcode treinamentos</h2>');
+                $('.paragrafo').click(function() {
+                    $(this).html('voce clickou em mim')
+                })
 
-                //  adicionando um elemento apos outro, com uma outra sintaxe
-                // $('<h2>Hcode treinamentos</h2>').insertAfter('.paragrafo')
+                let txt = $('.paragrafo').detach();
 
-                // adicionando um elemento antes de outro
-                // $('.paragrafo').before('<h2>introducao</h2>')
-
-
-                // adicionando um elemento antes de outro com outra sintaxe
-                // $('<h2>introducao</h2>').insertBefore('.paragrafo')
-
-                // adicionando um elemento em volta de outro
-                // $('.cars_list li').wrap('<i></i>')
-
-                // adicionando um elemento em volta do conteudo de outro
-                // $('.cars_list li').wrapInner('<i></i>')
+                $('section main p').before(txt)
 
             })
 
