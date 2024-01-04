@@ -186,42 +186,17 @@
     
         $(document).ready(function(){
 
-            $('p').click(function(event) {
+            // evento para quando o navegador mudar seu tamanho
+            $(window).resize(function() {
 
-                // retorna o tipo de evento executado
-                // console.log('voce realizou um evento de '+event.type)
+                console.info(`a largura do navegador é ${$(window).width()}. altura é ${$(window).height()}`)
 
-                // retorna o nome do elemento que clicamos
-                // alert(`voce clicou em uma tag <${event.target.localName}> `)
+            });
 
-                // console.log(event.target);
-                // console.log(event.currentTarget);
+            // evento para quando a barra de rolagem se mover
+            $(window).scroll(function() {
 
-            })
-
-            // retorna a posicao x e y do elemento onde ocorreu o evento
-            // event.pageX, event.pageY
-
-            $('[name=bio]').keydown(function(e) {
-
-                // retorna o codigo da tecla perssionada
-                // console.log(e.keyCode)
-                // console.log(e.which)
-
-                // retorna o nome da tecla pressionada
-                // console.log(e.key)
-                /*
-                if(e.key === 'Enter') {
-                    e.preventDefault();
-                    alert('voce pressionou o enter')
-                }
-                */
-
-                // para a execução padrao do evento
-                // e.preventDefault();
-
-                // para a propagacao de eventos
-                // e.stopPropagation();
+                console.log(`voce esta na posicao ${$(window).scrollTop()}`)
 
             })
 
