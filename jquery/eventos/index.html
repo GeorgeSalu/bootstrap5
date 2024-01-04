@@ -166,6 +166,10 @@
                 </div>
             </div>
 
+            <p>Lorem <span> ipsum dolor sit, amet consectetur adipisicing elit. Ipsam illo tempora atque ab dolore accusantium et quas </span> totam autem iusto adipisci, perferendis eveniet soluta, inventore, recusandae ipsa iure ducimus consequuntur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corrupti velit illum nulla quidem. Dolorum neque quo sunt eius veniam enim ipsum, praesentium exercitationem facilis atque unde. Beatae, doloremque excepturi.</p>
+
+
         </div>
 
     </section>
@@ -182,68 +186,16 @@
     
         $(document).ready(function(){
 
-            // evento para qunado o elemento receber o foco
-            /*
-            $('[name]').focus(function() {
+            $('p').click(function(event) {
 
-                $(this).css('background', 'yellow');
+                // retorna o tipo de evento executado
+                // console.log('voce realizou um evento de '+event.type)
 
-            })
-            */
+                // retorna o nome do elemento que clicamos
+                // alert(`voce clicou em uma tag <${event.target.localName}> `)
 
-
-            // evento para quando o elemento perder o foco
-            /*
-            $('[name]').blur(function() {
-
-                alert('voce digitou '+$(this).val())
-
-            })
-            */
-
-            // evento para quando o elemento receber o foco, mesmo que seja um elemento filho
-            /*
-            $('.form-group').focusin(function() {
-
-                console.log('voce selecionou um campo')
-
-            });
-
-            $('.form-group').focusout(function() {
-
-                console.log('voce deixou um elemento')
-
-            });
-            */
-
-            // evento para quando o campo mudar seu valor
-            $('[name]').change(function() {
-
-                console.log(`valor do campo : ${$(this).val()}`)
-
-            });
-
-
-            // evento para quando selecionarmos o valor de um campo do formulario
-            $('[type=text]').select(function() {
-
-                console.log('voce selecionou o valor deste campo')
-
-            })
-
-            $('form').submit(function(event) {
-
-                event.preventDefault();
-
-                console.log($(this).serializeArray());
-
-            });
-
-            $('#link_logo').click(function(event) {
-
-                event.preventDefault();
-
-                $(this).find('img').attr('src', 'img/jquery.jpg')
+                console.log(event.target);
+                console.log(event.currentTarget);
 
             })
 
