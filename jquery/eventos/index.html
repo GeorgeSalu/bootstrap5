@@ -180,6 +180,8 @@
                 </div>
             </div>
 
+            <button class="btn btn-warning" id="btn_remove_css_color">retirar cor vermelha</button>
+
             <p>Lorem <span> ipsum dolor sit, amet consectetur adipisicing elit. Ipsam illo tempora atque ab dolore accusantium et quas </span> totam autem iusto adipisci, perferendis eveniet soluta, inventore, recusandae ipsa iure ducimus consequuntur?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corrupti velit illum nulla quidem. Dolorum neque quo sunt eius veniam enim ipsum, praesentium exercitationem facilis atque unde. Beatae, doloremque excepturi.</p>
 
@@ -224,25 +226,25 @@
 
             })
 
+            $('p').on('click.colorRed', function() {
 
-            // criando um evento personalizado
-            $('header').on('initPage', function() {
+                $(this).toggleClass('selected_section');
 
-                $(this).find('h1').append(' - seja bem-vindo ').css({
-                    color: 'blue',
-                    left: '100px'
-                });
+            });
 
-                $(this).find('img').animate({
-                    width: '400px'
-                })
 
-            })
+            $('p').on('click', function() {
 
-            setTimeout(function() {
-                $('header').trigger('initPage')
-            }, 1500)
+                $(this).toggleClass('underline_section');
+                
 
+            });
+
+            $('#btn_remove_css_color').on('click', function() {
+
+                $('p').off('click.colorRed')
+
+            });
 
         });
         

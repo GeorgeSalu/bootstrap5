@@ -29,6 +29,10 @@ header h1 {
     color: red;
 }
 
+.underline_section {
+    text-decoration: underline;
+}
+
 footer {
     margin-top: 50px;
     background-color: black;
