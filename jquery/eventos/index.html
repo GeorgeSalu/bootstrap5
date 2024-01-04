@@ -57,6 +57,18 @@
                                 <td>Dom Casmurro</td>
                                 <td>Machado de Assis</td>
                             </tr>
+                            <tr>
+                                <td>Learning jquery</td>
+                                <td>jonathan charffer</td>
+                            </tr>
+                            <tr>
+                                <td>Extraordinario</td>
+                                <td>R. J. Palacio</td>
+                            </tr>
+                            <tr>
+                                <td>Start Wars - herdeiro do imperio</td>
+                                <td>Timothy Zhan</td>
+                            </tr>
                         </tbody>
                     </table>
 
@@ -213,21 +225,18 @@
             })
 
 
-            let entries = 100;
+            $('.books').append('<u> - marque seus favoritos (essa ação nao pode ser desfeita)</u>')
 
-            $('.register').append(`<ul> - ainda restam um ${100 - entries} vagas </ul>`);
+            $('#books_list tbody tr').one('click', function() {
 
-            $('#form_login [type=submit]').on('click', function(e) {
+                if(!$(this).hasClass('trselected')) {
+                    $(this).addClass('trselected');
+                } else {
+                    $(this).removeClass('trselected');
+                }
 
-                e.preventDefault();
+            })
 
-                alert('voce foi cadsastrado com sucesso, parabens !!!!');
-
-            });
-
-            if(entries >= 100) {
-                $('#form_login [type=submit]').off('click');
-            }
 
         });
         
