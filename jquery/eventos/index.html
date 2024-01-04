@@ -213,20 +213,21 @@
             })
 
 
-            $('#form_login').on('change', '[name]', function() {
+            let entries = 100;
 
-                alert('elemento mudou, seu valor : '+$(this).val())
+            $('.register').append(`<ul> - ainda restam um ${100 - entries} vagas </ul>`);
 
-            })
+            $('#form_login [type=submit]').on('click', function(e) {
 
-            $('#form_login [name=bio]').on('change',function(event) {
+                e.preventDefault();
 
-                event.stopPropagation();
+                alert('voce foi cadsastrado com sucesso, parabens !!!!');
 
-                $(this).css('background', 'red')
+            });
 
-            } )
-
+            if(entries >= 100) {
+                $('#form_login [type=submit]').off('click');
+            }
 
         });
         
