@@ -202,6 +202,7 @@
             */
 
             // evento para quando o elemento receber o foco, mesmo que seja um elemento filho
+            /*
             $('.form-group').focusin(function() {
 
                 console.log('voce selecionou um campo')
@@ -213,6 +214,28 @@
                 console.log('voce deixou um elemento')
 
             });
+            */
+
+            // evento para quando o campo mudar seu valor
+            $('[name]').change(function() {
+
+                console.log(`valor do campo : ${$(this).val()}`)
+
+            });
+
+
+            // evento para quando selecionarmos o valor de um campo do formulario
+            $('[type=text]').select(function() {
+
+                console.log('voce selecionou o valor deste campo')
+
+            })
+
+            $('form').submit(function() {
+
+                console.log($(this).serializeArray());
+
+            })
 
 
         });
