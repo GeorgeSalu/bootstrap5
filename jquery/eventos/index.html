@@ -35,6 +35,8 @@
 
                     <h3 class="text-center books"><u>Lista de Livros</u></h3>
 
+                    <button class="btn btn-info" id="btn_add_book">Adicionar Livro</button>
+
                     <table class="table table-striped" id="books_list">
                         <thead>
                             <tr>
@@ -210,6 +212,8 @@
 
             })
 
+            // exemplo do metodo on
+            /*
             $('#books_list tbody td').on('click contextmenu', function(e) {
 
                 if(e.type == 'contextmenu') e.preventDefault()
@@ -223,6 +227,28 @@
                     backgroundColor: 'black',
                     color: 'white'
                 })
+
+            })
+            */
+
+            $('#books_list tbody').on('click', 'td', function(e) {
+
+                $('#books_list tbody td').removeClass('trselected');
+
+                $(this).addClass('trselected');
+
+            })
+
+            $('#btn_add_book').on('click', function() {
+                
+                let tr = `
+                    <tr>
+                        <td>Til</td>
+                        <td>Jose de alencar</td>
+                    </tr>
+                `;
+
+                $('#books_list tbody').append(tr);
 
             })
 
