@@ -212,46 +212,21 @@
 
             })
 
-            // exemplo do metodo on
-            /*
-            $('#books_list tbody td').on('click contextmenu', function(e) {
 
-                if(e.type == 'contextmenu') e.preventDefault()
+            $('#form_login').on('change', '[name]', function() {
 
-                $('#books_list tbody td').css({
-                    backgroundColor: 'initial',
-                    color: "initial"
-                });
-
-                $(this).css({
-                    backgroundColor: 'black',
-                    color: 'white'
-                })
-
-            })
-            */
-
-            $('#books_list tbody').on('click', 'tr', function(e) {
-
-                $(e.delegateTarget).find('tr').removeClass('trselected');
-                $('#books_list tbody td').removeClass('trselected');
-
-                $(this).addClass('trselected');
+                alert('elemento mudou, seu valor : '+$(this).val())
 
             })
 
-            $('#btn_add_book').on('click', function() {
-                
-                let tr = `
-                    <tr>
-                        <td>Til</td>
-                        <td>Jose de alencar</td>
-                    </tr>
-                `;
+            $('#form_login [name=bio]').on('change',function(event) {
 
-                $('#books_list tbody').append(tr);
+                event.stopPropagation();
 
-            })
+                $(this).css('background', 'red')
+
+            } )
+
 
         });
         
