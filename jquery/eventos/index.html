@@ -186,17 +186,28 @@
     
         $(document).ready(function(){
 
-            // evento para quando o navegador mudar seu tamanho
-            $(window).resize(function() {
-
-                console.info(`a largura do navegador é ${$(window).width()}. altura é ${$(window).height()}`)
-
-            });
-
-            // evento para quando a barra de rolagem se mover
             $(window).scroll(function() {
 
-                console.log(`voce esta na posicao ${$(window).scrollTop()}`)
+                let position = $(window).scrollTop();
+
+                let sections = ['.title', '.books', '.register'];
+
+                let el;
+
+                if(position < 50) {
+                    el = $(sections[0]);
+                    sections.splice(0,1);
+                } else if(position < 200) {
+                    el = $(sections[1])
+                    sections.splice(1,1)
+                } else if(200 < position < 400) {
+                    el = $(sections[2])
+                    sections.splice(2,1)
+                }
+
+                $(el).addClass('selected_section');
+
+                $(sections.join(', ')).removeClass('selected_section')
 
             })
 
