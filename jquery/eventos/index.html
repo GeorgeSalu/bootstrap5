@@ -182,7 +182,37 @@
     
         $(document).ready(function(){
 
+            // evento para qunado o elemento receber o foco
+            /*
+            $('[name]').focus(function() {
 
+                $(this).css('background', 'yellow');
+
+            })
+            */
+
+
+            // evento para quando o elemento perder o foco
+            /*
+            $('[name]').blur(function() {
+
+                alert('voce digitou '+$(this).val())
+
+            })
+            */
+
+            // evento para quando o elemento receber o foco, mesmo que seja um elemento filho
+            $('.form-group').focusin(function() {
+
+                console.log('voce selecionou um campo')
+
+            });
+
+            $('.form-group').focusout(function() {
+
+                console.log('voce deixou um elemento')
+
+            });
 
 
         });
