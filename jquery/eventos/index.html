@@ -224,31 +224,24 @@
 
             })
 
-            /*
-            $('h1').on('dblclick', function() {
 
-                $(this).text('hcode treinamentos jquery')
+            // criando um evento personalizado
+            $('header').on('initPage', function() {
 
-            })
-            */
+                $(this).find('h1').append(' - seja bem-vindo ').css({
+                    color: 'blue',
+                    left: '100px'
+                });
 
-            // acionando um evento manualmente
-            // $('h1').trigger('dblclick')
-
-            $('#form_login').on('submit', function(event) {
-
-                event.preventDefault();
-
-                console.log('aqui estao os valores do formulario', $(this).serializeArray());
+                $(this).find('img').animate({
+                    width: '400px'
+                })
 
             })
 
-            $('#form_login [name=bio]').on('blur', function(e) {
-
-                $(e.target.form).trigger('submit');
-
-            })
-
+            setTimeout(function() {
+                $('header').trigger('initPage')
+            }, 1500)
 
 
         });
