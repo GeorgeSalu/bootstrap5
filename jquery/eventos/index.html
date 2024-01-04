@@ -243,6 +243,46 @@
             // simulando o duplo clique
             // $('table tbody tr:eq(2)').dblclick();
 
+            // evento para quando o mouse "passa por cima" entra em algum elemento
+            /*
+            $('table tbody tr').mouseenter(function() {
+
+                $(this).addClass('trselected')
+
+            })
+            */
+            
+            // evento para quando o cursos "deixa" um elemento
+            /*
+            $('table tbody tr').mouseleave(function() {
+
+                $(this).removeClass('trselected')
+
+            })
+            */
+
+            // evento para quando o curso "entra" e "deixa" um elemento
+            /*
+            $('table tbody tr').hover(function() {
+                
+                $(this).addClass('trselected');
+
+            }, function() {
+
+                $(this).removeClass('trselected');
+
+            })
+            */
+
+            // evento para quando o mouse se movimenta dentro de um elemento
+            /*
+            $('table tbody tr').mousemove(function(event) {
+
+                $('h1').text(`voce esta na posicao x ${event.pageX} y ${event.pageY}`)
+
+            })
+            */
+
 
         });
         
