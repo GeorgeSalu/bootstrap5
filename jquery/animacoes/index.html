@@ -110,28 +110,36 @@
         
             $(document).ready(function(){
 
-                jQuery.fx.off = true;
+                // criando animacoes personalizadas
+                $('h1').animate({
+                    fontSize: '50px'
+                });
 
-                // escondendo um elemento com o efeito de "sliding"
-                $('.courses_list .course_item_inner:eq(4)').slideUp('fast');
+                /*
+                $('.course_item h4').on('click', function() {
 
-                // exibindo um elemento com o efeito de "sliding"
-                $('.courses_list .course_item_inner:eq(4)').slideDown('fast');
+                    $(this).animate({
+                        wordSpacing: '+=5px',
+                    }, 4000)
 
-                // exibindo ou escondendo um elemento com efeito de "sliding"
-                $('.btn_toggle_item').on('click', function() {
+                });
+                */
 
-                    $(this).prev('.course_item_inner').slideToggle(3000, function() {
+                $('.course_item').on('click', function() {
 
-                        console.log("sumi ou apareci, agora deslizando")
-
-                    })
+                    $(this).animate({
+                        padding: '+=5px'
+                    }, 1500)
 
                 });
 
-                $('#disable_effects').on('click', function() {
+                $('footer p').on('click', function() {
 
-                    jQuery.fx.off = !jQuery.fx.off;
+                    $(this).animate({
+                        letterSpacing: '+=10px'
+                    }, 2000, function() {
+                        alert('aumentou o espacamento das letras')
+                    })
 
                 })
 
