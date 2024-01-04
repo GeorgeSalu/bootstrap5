@@ -231,8 +231,9 @@
             })
             */
 
-            $('#books_list tbody').on('click', 'td', function(e) {
+            $('#books_list tbody').on('click', 'tr', function(e) {
 
+                $(e.delegateTarget).find('tr').removeClass('trselected');
                 $('#books_list tbody td').removeClass('trselected');
 
                 $(this).addClass('trselected');
