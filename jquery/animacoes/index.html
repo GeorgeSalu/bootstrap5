@@ -32,9 +32,15 @@
 
                 <div class="row">
 
-                    <div class="col-sm-12 col-md-12 col-xs-12">
+                    <div class="col-sm-8 col-md-8 col-xs-12">
 
                         <h2>Cursos Hcode</h2>
+
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-xs-12">
+
+                        <button class="btn btn-danger" id="disable_effects">Desabilitar animacoes</button>
 
                     </div>
 
@@ -104,6 +110,8 @@
         
             $(document).ready(function(){
 
+                jQuery.fx.off = true;
+
                 // escondendo um elemento com o efeito de "sliding"
                 $('.courses_list .course_item_inner:eq(4)').slideUp('fast');
 
@@ -111,7 +119,21 @@
                 $('.courses_list .course_item_inner:eq(4)').slideDown('fast');
 
                 // exibindo ou escondendo um elemento com efeito de "sliding"
-                $('.courses_list .course_item_inner:eq(4)').slideToggle(3000);
+                $('.btn_toggle_item').on('click', function() {
+
+                    $(this).prev('.course_item_inner').slideToggle(3000, function() {
+
+                        console.log("sumi ou apareci, agora deslizando")
+
+                    })
+
+                });
+
+                $('#disable_effects').on('click', function() {
+
+                    jQuery.fx.off = !jQuery.fx.off;
+
+                })
 
             });
             
