@@ -224,18 +224,31 @@
 
             })
 
+            /*
+            $('h1').on('dblclick', function() {
 
-            $('.books').append('<u> - marque seus favoritos (essa ação nao pode ser desfeita)</u>')
-
-            $('#books_list tbody tr').one('click', function() {
-
-                if(!$(this).hasClass('trselected')) {
-                    $(this).addClass('trselected');
-                } else {
-                    $(this).removeClass('trselected');
-                }
+                $(this).text('hcode treinamentos jquery')
 
             })
+            */
+
+            // acionando um evento manualmente
+            // $('h1').trigger('dblclick')
+
+            $('#form_login').on('submit', function(event) {
+
+                event.preventDefault();
+
+                console.log('aqui estao os valores do formulario', $(this).serializeArray());
+
+            })
+
+            $('#form_login [name=bio]').on('blur', function(e) {
+
+                $(e.target.form).trigger('submit');
+
+            })
+
 
 
         });
