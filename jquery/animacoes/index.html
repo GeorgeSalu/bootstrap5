@@ -40,13 +40,13 @@
 
                     <div class="col-sm-4 col-md-4 col-xs-12">
 
-                        <button class="btn btn-success" id="init_effect">Iniciar animacoes</button>
+                        <button class="btn btn-success" id="init_effect">Iniciar animação</button>
 
                     </div>
 
                     <div class="col-sm-4 col-md-4 col-xs-12">
 
-                        <button class="btn btn-danger" id="disable_effects">Desabilitar animacoes</button>
+                        <button class="btn btn-danger" id="stop_effect">Parar a animação</button>
 
                     </div>
 
@@ -133,6 +133,15 @@
                     })
                     .delay(100)
                     .fadeOut(2000);
+
+                })
+
+                $('#stop_effect').on('click', function() {
+
+                    // parando uma animacao
+                    // $('.logo').stop(true, true)
+
+                    $('.logo').finish()
 
                 })
 
