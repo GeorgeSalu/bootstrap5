@@ -40,6 +40,12 @@
 
                     <div class="col-sm-4 col-md-4 col-xs-12">
 
+                        <button class="btn btn-success" id="init_effect">Iniciar animacoes</button>
+
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-xs-12">
+
                         <button class="btn btn-danger" id="disable_effects">Desabilitar animacoes</button>
 
                     </div>
@@ -110,36 +116,23 @@
         
             $(document).ready(function(){
 
-                // criando animacoes personalizadas
-                $('h1').animate({
-                    fontSize: '50px'
-                });
+                $('#init_effect').on('click', function() {
 
-                /*
-                $('.course_item h4').on('click', function() {
-
-                    $(this).animate({
-                        wordSpacing: '+=5px',
-                    }, 4000)
-
-                });
-                */
-
-                $('.course_item').on('click', function() {
-
-                    $(this).animate({
-                        padding: '+=5px'
-                    }, 1500)
-
-                });
-
-                $('footer p').on('click', function() {
-
-                    $(this).animate({
-                        letterSpacing: '+=10px'
-                    }, 2000, function() {
-                        alert('aumentou o espacamento das letras')
+                    $('.logo').animate({
+                        marginTop: '+=90px',
                     })
+                    .delay(500)
+                    .animate({
+                        marginLeft: '+=300px'
+                    })
+                    .queue(function() {
+                        $('h1').text('animacao concluida').css({
+                            'color': 'red'
+                        });
+                        $(this).dequeue();
+                    })
+                    .delay(100)
+                    .fadeOut(2000);
 
                 })
 
