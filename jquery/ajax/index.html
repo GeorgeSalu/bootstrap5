@@ -102,6 +102,20 @@
             $.ajax({
                 url: "http://localhost:3000/books",
                 success: function(response) {
+
+                    $.each(response, function(index, item) {
+
+                        let tr = `
+                            <tr>
+                                <td>${item.name}</td>
+                                <td>${item.author}</td>
+                            </tr>
+                        `
+
+                        $('table tbody').append(tr)
+
+                    });
+
                     console.log(response)
                 },
                 error: function(err) {
