@@ -1,5 +1,5 @@
-# front-end
+## front-end
 
-    Bootstrap 5 e JQuery 3
+    Bootstrap 5.+ e JQuery 3.+
 
     
