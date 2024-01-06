@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const nedb = require('nedb');
 const bodyParser = require('body-parser');
 const db = new nedb({ filename: './database.db', autoload: true });
@@ -6,6 +7,7 @@ const db = new nedb({ filename: './database.db', autoload: true });
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cors())
 
 app.get('/books', (req, res) => {
 
