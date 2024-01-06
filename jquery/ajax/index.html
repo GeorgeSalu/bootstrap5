@@ -99,9 +99,11 @@
     
         $(document).ready(function(){
 
-            $.ajax({
-                url: "http://localhost:3000/books",
-                success: function(response) {
+            function loadData() {
+
+                $.get('http://localhost:3000/books', function(response) {
+
+                    $('table tbody').html();
 
                     $.each(response, function(index, item) {
 
@@ -116,12 +118,12 @@
 
                     });
 
-                    console.log(response)
-                },
-                error: function(err) {
-                    console.log(err)
-                }
-            });
+
+                })
+
+            }
+
+            loadData();
 
             $('#form_create_book').on('submit', function(event) {
                 
@@ -137,7 +139,7 @@
 
                 $.post('http://localhost:3000/books', data, function(response) {
 
-                    console.log(response);
+                    loadData();
 
                 })
 
