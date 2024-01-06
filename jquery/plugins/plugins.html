@@ -16,11 +16,25 @@
 
     (function($) {
 
-      $.fn.changeText = function() {
+      $.fn.changeText = function(params) {
 
-        this.css('font-size', '50px');
+        let defaults = {
+          fontSize: 30,
+          color: '#ccc',
+          fontFamily: 'Verdana'
+        }
 
-        return this;
+        let options = $.extend(defaults, params);
+
+        return this.each(function() {
+
+          $(this).css({
+            'font-size': options.fontSize + 'px',
+            'color': options.color,
+            'font-family': options.fontFamily
+          });
+
+        })
 
       }
 
@@ -30,7 +44,10 @@
 
     $(() => {
 
-
+      $('h1').changeText({
+        fontSize: 40,
+        fontFamily: 'Arial'
+      })
 
     });
 
