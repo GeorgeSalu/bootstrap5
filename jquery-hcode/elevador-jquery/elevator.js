@@ -30,15 +30,27 @@ class Elevator {
   goToFloor(number) {
     this.removeFloorClasses();
 
+    let currentFloor = this.$elevator.data('floor');
+
+    let diff = number - currentFloor;
+
+    let time = diff * 2;
+
     this.$elevator.addClass(`floor${number}`);
 
     this.$elevator.data('floor', number);
+
+    this.$elevator.css('-webkit-transition-duration', `${time}s`);
   }
 
   removeFloorClasses() {
+
     for(let i = 1; i <= this.floorQtd; i++) {
+    
       this.$elevator.removeClass(`floor${i}`);
+    
     }
+  
   }
 
 }
