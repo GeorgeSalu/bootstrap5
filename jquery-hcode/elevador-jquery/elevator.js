@@ -3,6 +3,23 @@ class Elevator {
   constructor() {
     this.$elevator = $('.elevator');
     this.floorQtd = 3;
+    this.initEvents();
+  }
+
+  initEvents() {
+
+    $('.buttons .btn').on('click', e => {
+
+      let btn = e.target;
+
+      $(btn).addClass('floor-selected');
+
+      let floor = $(btn).data('floor');
+
+      this.goToFloor(floor);
+
+    });
+
   }
 
   openDoor() {
@@ -78,6 +95,8 @@ class Elevator {
         this.setDisplay(number);
 
         this.openDoor();
+
+        $(`.buttons .button${number}`).removeClass('floor-selected');
 
         setTimeout(() => {
 
