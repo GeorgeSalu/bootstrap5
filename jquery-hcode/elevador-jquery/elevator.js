@@ -5,7 +5,7 @@ class Elevator {
   }
 
   openDoor() {
-    if(this.isDoorsOpen) {
+    if(this.isDoorsOpen()) {
       return true;
     } else {
       this.$elevator.find('.door').addClass('open');
@@ -13,7 +13,7 @@ class Elevator {
   }
 
   closeDoor() {
-    if(this.isDoorsOpen) {
+    if(this.isDoorsOpen()) {
       this.$elevator.find('.door').removeClass('open');
     } else {
       return true;
@@ -23,7 +23,7 @@ class Elevator {
   isDoorsOpen() {
     let doors = this.$elevator.find('.door');
 
-    return (doors.hasClass('open'))
+    return (doors.hasClass('open'));
   }
 
 }
