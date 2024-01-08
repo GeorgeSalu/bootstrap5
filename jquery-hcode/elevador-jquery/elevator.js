@@ -6,19 +6,39 @@ class Elevator {
   }
 
   openDoor() {
-    if(this.isDoorsOpen()) {
-      return true;
-    } else {
-      this.$elevator.find('.door').addClass('open');
-    }
+    return new Promise((resolve, reject) => {
+
+      if(this.isDoorsOpen()) {
+      
+        resolve();
+
+      } else {
+      
+        this.$elevator.find('.door').addClass('open');
+
+        resolve();
+
+      }
+
+    })
   }
 
   closeDoor() {
-    if(this.isDoorsOpen()) {
-      this.$elevator.find('.door').removeClass('open');
-    } else {
-      return true;
-    }
+    return new Promise((resolve, reject) => {
+
+      if(this.isDoorsOpen()) {
+      
+        this.$elevator.find('.door').removeClass('open');
+
+        resolve();
+      
+      } else {
+
+        resolve();
+      
+      }
+
+    })
   }
 
   isDoorsOpen() {
@@ -28,19 +48,45 @@ class Elevator {
   }
 
   goToFloor(number) {
-    this.removeFloorClasses();
+    this.closeDoor().then(() => {
 
-    let currentFloor = this.$elevator.data('floor');
+      new Promise((resolve, reject) => {
 
-    let diff = number - currentFloor;
+        this.removeFloorClasses();
+  
+        let currentFloor = this.$elevator.data('floor');
+    
+        let diff = number - currentFloor;
+    
+        let time = diff * 2;
+    
+        this.$elevator.addClass(`floor${number}`);
+    
+        this.$elevator.data('floor', number);
+    
+        this.$elevator.css('-webkit-transition-duration', `${time}s`);
 
-    let time = diff * 2;
+        this.$elevator.on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', () => {
 
-    this.$elevator.addClass(`floor${number}`);
+          resolve();
 
-    this.$elevator.data('floor', number);
+        });
 
-    this.$elevator.css('-webkit-transition-duration', `${time}s`);
+
+      }).then(() => {
+
+        this.openDoor();
+
+        setTimeout(() => {
+
+          this.closeDoor();
+
+        }, 3000)
+
+      })
+
+    });
+
   }
 
   removeFloorClasses() {
