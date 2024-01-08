@@ -75,6 +75,8 @@ class Elevator {
 
       }).then(() => {
 
+        this.setDisplay(number);
+
         this.openDoor();
 
         setTimeout(() => {
@@ -86,6 +88,12 @@ class Elevator {
       })
 
     });
+
+  }
+
+  setDisplay(floor) {
+
+    this.$elevator.find('.display').text(floor);
 
   }
 
