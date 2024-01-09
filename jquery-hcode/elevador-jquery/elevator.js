@@ -115,26 +115,34 @@ class Elevator {
       this.closeDoor().then(() => {
   
         new Promise((resolve, reject) => {
-  
-          this.removeFloorClasses();
-    
           let currentFloor = this.$elevator.data('floor');
-      
-          let diff = number - currentFloor;
-      
-          let time = diff * 2;
-      
-          this.$elevator.addClass(`floor${number}`);
-      
-          this.$elevator.data('floor', number);
-      
-          this.$elevator.css('-webkit-transition-duration', `${time}s`);
+
+          if(number != currentFloor) {
+
+            this.removeFloorClasses();
+        
+            let diff = number - currentFloor;
+        
+            let time = diff * 2;
+        
+            this.$elevator.addClass(`floor${number}`);
+        
+            this.$elevator.data('floor', number);
+        
+            this.$elevator.css('-webkit-transition-duration', `${time}s`);
+    
+            this.transitionEnd(() => {
   
-          this.transitionEnd(() => {
+              resolve();
+  
+            });
+
+          } else {
 
             resolve();
 
-          });
+          }
+  
   
         }).then(() => {
   
