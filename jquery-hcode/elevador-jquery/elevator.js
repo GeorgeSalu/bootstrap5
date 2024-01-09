@@ -4,6 +4,25 @@ class Elevator {
     this.$elevator = $('.elevator');
     this.floorQtd = 3;
     this.initEvents();
+    this.initCamera();
+  }
+
+  initCamera() {
+
+    navigator.mediaDevices.getUserMedia({
+      video: true
+    }).then(stream => {
+
+      let video = this.$elevator.find('.camera')[0];
+
+      video.srcObject = stream;
+
+    }).catch(err => {
+
+      console.log(err);
+
+    })
+
   }
 
   initEvents() {
