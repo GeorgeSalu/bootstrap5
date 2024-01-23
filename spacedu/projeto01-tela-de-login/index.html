@@ -6,18 +6,35 @@
   <title>Bootstrap 5 - secao 05 - projeto tela de login</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.min.css">
+  <style type="text/css">
+    .full-height {
+      min-height: 100vh;
+    }
+    .img-cover {
+      background-image: url(/img/fundo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .input {
+      width: 100%;
+      margin-bottom: 10px;
+      outline: none;
+
+    }
+  </style>
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row full-height">
       <div class="col-md-6 col-12">
-        <div class="row justify-content-center align-items-center" >
+        <div class="row full-height justify-content-center align-items-center" >
           <div class="col-8 align-self-center">
-            <h2>Login</h2>
-            <p>faça o login para continuar</p>
-            <input type="text" />
+            <h2 class="display-5">Login</h2>
+            <p class="lead" style="margin-bottom: 40px;">faça o login para continuar</p>
+            <input class="input border-0 border-bottom p-2" placeholder="email" type="text" />
             <br />
-            <input type="password" />
+            <input class="input border-0 border-bottom p-2" placeholder="senha" type="password" />
             <br />
             <button>logar</button>
             <a href="#" >esqueceu a senha</a>
@@ -31,7 +48,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-12" style="height: 900px; background-image: url(/img/fundo.jpg);">
+      <div class="col-md-6 col-12 full-height img-cover" >
         imagem em destaque
       </div>
     </div>
