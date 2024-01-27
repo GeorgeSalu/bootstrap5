@@ -14,11 +14,41 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.min.css"
     />
+    <style type="text/css">
+      .bg-primary {
+        background-color: #fdc800 !important;
+      }
+
+      .btn-primary {
+        background-color: #fdc800;
+        border: 1px solid #fdc800;
+        color: #002147;
+      }
+
+      .bg-light {
+        background-color: #f0f4f9 !important;
+      }
+
+      .btn-primary:hover {
+        background-color: #fdc800;
+        border: 1px solid #002147;
+        color: #002147;
+      }
+
+      .btn-info {
+        background-color: white;
+      }
+
+      .btn-info:hover {
+        border: 1px solid #002147;
+        background-color: white;
+      }
+    </style>
   </head>
   <body>
     <!-- start cabeçalho amarelo -->
 
-    <div class="bg-warning">
+    <div class="bg-primary">
       <div class="container p-2 d-flex">
         <div class="d-none d-xl-block">
           <img alt="icon pin" src="img/pin.svg" />
@@ -57,22 +87,22 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
+          <ul class="navbar-nav ms-auto me-md-4">
+            <li class="nav-item mx-lg-2 mx-xl-4">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-lg-2 mx-xl-4">
               <a class="nav-link" href="#">Sobre</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-lg-2 mx-xl-4">
               <a class="nav-link" href="#">Cursos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-lg-2 mx-xl-4">
               <a class="nav-link" href="#">Contato</a>
             </li>
           </ul>
           <div class="d-flex">
-            <button class="btn btn-primary">cadastre-se</button>
+            <button class="btn btn-primary me-3">cadastre-se</button>
             <button class="btn btn-info border">
               <img src="img/search.svg" />
             </button>
