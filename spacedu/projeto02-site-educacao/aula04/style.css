@@ -35,3 +35,16 @@
   border: 1px solid #002147;
   background-color: white;
 }
+
+.text-primary {
+  color: #fdc800 !important;  
+}
+
+.text-large {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.text-small {
+  font-size: 10px;
+}
