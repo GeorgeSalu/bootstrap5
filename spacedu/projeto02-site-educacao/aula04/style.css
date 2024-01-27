@@ -40,11 +40,36 @@
   color: #fdc800 !important;  
 }
 
-.text-large {
-  font-size: 40px;
-  font-weight: bolder;
+@media screen and (max-width: 577px) {
+  .text-large {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  
+  .text-small {
+    font-size: 8px;
+  }
 }
 
-.text-small {
-  font-size: 10px;
+@media screen and (min-width: 577px) {
+  .text-large {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+  
+  .text-small {
+    font-size: 10px;
+  }
 }
+
+@media screen and (min-width: 1400px) {
+  .text-large {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  
+  .text-small {
+    font-size: 14px;
+  }
+}
+
