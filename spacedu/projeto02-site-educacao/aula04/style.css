@@ -92,3 +92,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.group input {
+  border: 0px;
+  outline: none;
+}
