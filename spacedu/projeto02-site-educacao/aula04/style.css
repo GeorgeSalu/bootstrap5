@@ -97,3 +97,7 @@
   border: 0px;
   outline: none;
 }
+
+.text-black {
+  color: black !important;
+}
