@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - secao 09 - aula 07</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row mb-3">
+        <div class="col-6">
+          <h1>Labels</h1>
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="elias@gmail.com.br"
+            />
+            <label for="email">E-mail</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <textarea
+              type="text"
+              class="form-control"
+              id="mensagem"
+              placeholder="elias@gmail.com.br"
+            ></textarea>
+            <label for="mensagem">mensagem</label>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col">
+              <div class="form-floating">
+                <select class="form-select">
+                  <option>fiat</option>
+                  <option>vw</option>
+                </select>
+                <label for="marcas">marcas</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <select class="form-select">
+                  <option>Argo</option>
+                  <option>Siena</option>
+                </select>
+                <label for="marcas">Modelo</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control is-valid"
+              id="email"
+              placeholder="elias@gmail.com.br"
+              value="elias@gmail.com.br"
+            />
+            <label for="email">E-mail</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input
+              type="text"
+              class="form-control is-invalid"
+              id="email"
+              placeholder="elias@gmail.com.br"
+              value="elias@gmail"
+            />
+            <label for="email">E-mail</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
