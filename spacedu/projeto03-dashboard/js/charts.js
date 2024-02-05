@@ -10,7 +10,7 @@ var options = {
   fill: {
       colors: ["#ffe605", "#00d153"]
   },
-  labels: ['online','presencial'],
+  labels: ['Online','Presencial'],
   legend: {
       show: false
   },
