@@ -26,3 +26,22 @@ h6 {
 .text-primary {
   color: #396eff !important;
 }
+.text-success {
+  color: #00d153 !important;
+}
+.text-warning {
+  color: #ffe605 !important;
+}
+.text-danger {
+  color: #d10000 !important;
+}
+.btn-success {
+  background-color: #ebebeb !important;
+  border-color: #ebebeb !important;
+  color: black !important;
+}
+.btn-success:hover {
+  background-color: #00d153 !important;
+  border-color: #00d153 !important;
+  color: white !important;
+}

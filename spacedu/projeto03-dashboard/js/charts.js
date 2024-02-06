@@ -58,7 +58,7 @@ var optionsPie = {
       colors: ['transparent']
     },
     xaxis: {
-      categories: ['Jan','Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out'],
+      categories: ['Jan','Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out',],
       axisBorder: {
         show: false
       },
