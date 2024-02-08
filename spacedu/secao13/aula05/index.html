@@ -13,7 +13,12 @@
   </head>
   <body class="p-4">
     <div>
-      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      <button
+        class="btn btn-primary dropdown-toggle"
+        data-bs-toggle="dropdown"
+        data-bs-auto-close="true"
+        data-bs-offset="0,30"
+      >
         Dropdown Menu - selecção de marcas famosas
       </button>
       <ul class="dropdown-menu dropdown-menu-start dropdown-menu-xl-end">
@@ -41,6 +46,20 @@
           </span>
         </li>
       </ul>
+    </div>
+
+    <div>
+      <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown Menu
+      </button>
+      <div class="dropdown-menu p-2">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero sint,
+          ab dolor mollitia atque expedita itaque officia voluptatem quo, esse
+          nemo sapiente consectetur consequuntur error perspiciatis, explicabo
+          ducimus adipisci laudantium?
+        </p>
+      </div>
     </div>
 
     <script
