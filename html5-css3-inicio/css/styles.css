@@ -64,3 +64,22 @@ h1 {
     background-color: #000000;
     color: azure;
 }
+
+/* fontes */
+
+.family {
+    color: #000;
+
+}
+
+.serif {
+    font-family: "Times new roman";
+}
+
+.sans-serif {
+    font-family: arial;
+}
+
+.monospace {
+    font-family: "Courier new";
+}
