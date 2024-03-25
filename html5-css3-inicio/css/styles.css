@@ -69,7 +69,7 @@ h1 {
 
 .family {
     color: #000;
-
+    font-size: 40px;
 }
 
 .serif {
@@ -82,4 +82,12 @@ h1 {
 
 .monospace {
     font-family: "Courier new";
+}
+
+.italic {
+    font-style: italic;
+}
+
+.obliquo {
+    font-style: oblique;
 }
