@@ -13,3 +13,12 @@ h2 {
 }
 
 /* este é um comentario */
+
+.p-texto {
+    color: lightgray;
+}
+
+#titulo-app {
+    color: purple;
+    font-size: 40px;
+}
