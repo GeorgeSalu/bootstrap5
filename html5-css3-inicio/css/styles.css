@@ -49,3 +49,18 @@ div p {
 .rgba {
     color: rgba(17, 197, 214, 1);
 }
+
+.div-background {
+    background-image: url('img/aws.png');
+    height: 300px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.titulo-background {
+    text-align: center;
+    background-color: #000000;
+    color: azure;
+}
