@@ -22,3 +22,30 @@ h2 {
     color: purple;
     font-size: 40px;
 }
+
+/* especificidade */
+div p {
+    color: red;
+}
+
+.p-dentro-da-div {
+    color: blue;
+}
+
+#p-super-especifico {
+    color: green;
+}
+
+/* cores */
+
+.nome {
+    color: orange;
+}
+
+.hexa {
+    color: #6a40c4;
+}
+
+.rgba {
+    color: rgba(17, 197, 214, 1);
+}
