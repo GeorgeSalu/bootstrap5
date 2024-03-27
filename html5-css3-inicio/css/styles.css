@@ -121,6 +121,8 @@ body {
     margin: 50px;
     margin: 5px 10px 10px 7px;
     margin: 100px;
+    /* display: none; */
+    display: inline-block;
 }
 
 .paragrafo-box {
