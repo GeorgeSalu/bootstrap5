@@ -156,3 +156,18 @@ body {
     right: 0;
     top: 0;
 }
+
+.mini-div {
+    height: 50px;
+    width: 50px;
+    top: 50px;
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    height: 200px;
+    background-color: yellow;
+    bottom: 0;
+    right: 0;
+}
