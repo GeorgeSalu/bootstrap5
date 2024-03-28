@@ -184,3 +184,16 @@ body {
     background-color: gray;
     top: 0px;
 }
+
+.container {
+    padding: 50px;
+}
+
+.img-float {
+    width: 200px;
+    height: 200px;
+}
+
+.p-float {
+    color: #000;
+}
