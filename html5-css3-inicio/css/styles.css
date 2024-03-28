@@ -130,7 +130,14 @@ body {
     margin: 0;
 }
 
-/* positions - static , relative, fixed, absolute e sticky */
+/* 
+   positions
+   static - flow no html, não é alterado por top, left, right e bottom
+   relative - flow no html, ela é alterada pelo top, left, right e bottom 
+   fixed - posiciona em qualquer lugar da tela. e é posicionada em relação ao html
+   absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor 
+   sticky - esta no flow do html, porem ao passar o scroll ela funciona como fixed
+*/
 
 .div-position {
     width: 500px;
