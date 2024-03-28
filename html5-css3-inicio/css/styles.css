@@ -149,3 +149,10 @@ body {
     top: 100px;
     left: 50px;
 }
+
+.absolute {
+    position: absolute;
+    background-color: purple;
+    right: 0;
+    top: 0;
+}
