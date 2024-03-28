@@ -240,3 +240,20 @@ body {
     height: 50%;
     background-color: black;
 }
+
+.pai-em {
+    font-size: 50px;
+
+}
+
+.em-1 {
+    width: 2em;
+    height: 2em;
+    background-color: purple;
+}
+
+.rem-1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+}
