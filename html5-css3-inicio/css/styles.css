@@ -171,3 +171,9 @@ body {
     bottom: 0;
     right: 0;
 }
+
+.sticky {
+    position: sticky;
+    background-color: gray;
+    top: 0px;
+}
