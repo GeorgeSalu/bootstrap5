@@ -3,6 +3,7 @@
     <head>
         <meta  charset="utf-8">
         <title>cadastro de veiculos</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>
     <body>
         <div class="container">
@@ -10,7 +11,20 @@
                 <h3>cadastre seu veiculo para vender muito mas rapido</h3>
             </div>
             <div class="form-container">
-                
+                <div class="form-header">
+                    <p>cadastro</p>
+                </div>
+                <div class="form-body">
+                    <h1 class="form-title">venda facilseu veiculo</h1>
+                    <p>desccreva as caracteristicas do seu veiculo e marque todos os opcionais e caracteristicas que ele posui</p>
+                    <form >
+                        <div class="box-input">
+                            <label for="title">titulo do anuncio</label>
+                            <input type="text" name="title" id="title" class="block" placeholder="defina um titulo para seu veiculo" minlength="1" maxlength="30" required />
+                            <input type="submit" class="btn-submit" value="cadastrar" />
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </body>
