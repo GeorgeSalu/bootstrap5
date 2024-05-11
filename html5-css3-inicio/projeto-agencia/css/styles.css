@@ -1,3 +1,4 @@
+/* general */
 html {
     font-family: Helvetica, sans-serif;
 }
@@ -8,6 +9,7 @@ html {
     height: 600px;
     background-image: url('../img/capa2.jpg');
     background-position: center;
+    position: relative;
 }
 
 .box-container {
