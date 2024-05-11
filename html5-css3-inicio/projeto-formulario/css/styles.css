@@ -36,3 +36,16 @@ textarea {
     padding: 10px 5px;
     width: 400px;
 }
+
+/* cabeçalho da pagina */
+
+.header {
+    height: 160px;
+    padding: 20px;
+    background-color: #673Ab7;
+}
+
+.header h3 {
+    color: #FFF;
+    margin-top: 0;
+}
