@@ -42,6 +42,16 @@
     }
 }
 
+@keyframes animacao4 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 500px;
+    }
+}
+
 .animation-div {
     width: 100px;
     height: 100px;
@@ -69,4 +79,36 @@
     animation-duration: 5s;
     animation-delay: 2s;
     animation-iteration-count: 3;
+}
+
+/* timing function */
+
+.box {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#animation-div4 {
+    animation-timing-function: linear;
+}
+
+#animation-div5 {
+    animation-timing-function: ease;
+}
+
+#animation-div6 {
+    animation-timing-function: ease-in;
+}
+
+#animation-div7 {
+    animation-timing-function: ease-out;
+}
+
+#animation-div8 {
+    animation-timing-function: ease-in-out;
 }
