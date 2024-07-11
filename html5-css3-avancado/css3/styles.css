@@ -134,6 +134,7 @@
     animation-timing-function: ease-in-out;
 }
 
+/* shorthand - nome, duracao, timing-function, delay, iteration */
 #animation-div9 {
     background-color: darkblue;
     width: 50px;
