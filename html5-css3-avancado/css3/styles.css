@@ -52,6 +52,27 @@
     }
 }
 
+@keyframes animacao5 {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 20px;
+        background-color: blue;
+    }
+
+    60% {
+        left: 100px;
+        background-color: orange;
+    }
+
+    100% {
+        left: 50px;
+        background-color: red;
+    }
+}
+
 .animation-div {
     width: 100px;
     height: 100px;
@@ -111,4 +132,12 @@
 
 #animation-div8 {
     animation-timing-function: ease-in-out;
+}
+
+#animation-div9 {
+    background-color: darkblue;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: animacao5 8s ease-out 4s infinite;
 }
