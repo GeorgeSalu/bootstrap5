@@ -31,6 +31,17 @@
     }
 }
 
+@keyframes animacao3 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+        background-color: green;
+    }
+}
+
 .animation-div {
     width: 100px;
     height: 100px;
@@ -46,4 +57,16 @@
     animation-name: animacao2;
     animation-duration: 6s;
     position: relative;
+}
+
+/* animation delay */
+.animation-div3 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: relative;
+    animation-name: animacao3;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
 }
