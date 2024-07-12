@@ -285,3 +285,18 @@
         background-color: pink;
     }
 }
+
+.div-border {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin: 20px;
+}
+
+.border-radius1 {
+    border-radius: 10px;
+}
+
+.border-radius2 {
+    border-top-right-radius: 20px;
+}
