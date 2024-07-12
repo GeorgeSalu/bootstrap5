@@ -236,3 +236,15 @@
 .gradient6 {
     background-image: linear-gradient(blue, red, yellow);
 }
+
+.gradient7 {
+    background-image: radial-gradient(#323042, #DB9047, #FF7848)
+}
+
+.gradient8 {
+    background-image: radial-gradient(#323042 10%, #DB9047 30%, #FF7848)
+}
+
+.gradient8 {
+    background-image: radial-gradient(circle, #323042 10%, #DB9047 30%, #FF7848)
+}
