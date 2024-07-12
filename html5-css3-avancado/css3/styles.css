@@ -205,3 +205,34 @@
 .calc4 {
     width: calc(50% / 2);
 }
+
+.gradient-box {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    margin: 20;
+}
+
+.gradient1 {
+    background-image: linear-gradient(purple, blue);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to right, purple, blue);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to left, red, yellow);
+}
+
+.gradient4 {
+    background-image: linear-gradient(to top, red, yellow);
+}
+
+.gradient5 {
+    background-image: linear-gradient(to top right, red, yellow);
+}
+
+.gradient6 {
+    background-image: linear-gradient(blue, red, yellow);
+}
