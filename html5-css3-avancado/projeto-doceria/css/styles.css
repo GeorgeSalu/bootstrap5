@@ -269,3 +269,22 @@ form input[type=submit]:hover {
     font-size: 16px;
     font-family: 'Open sans', sans-serif;
 }
+
+#form-contato input[type=submit] {
+    margin-left: 0;
+    font-size: 16px;
+    width: 180px;
+}
+
+/* footer */
+
+footer {
+    height: 100px;
+    padding-top: 150px;
+    color: #006599;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
