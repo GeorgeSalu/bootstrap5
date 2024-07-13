@@ -11,6 +11,7 @@ body {
 .box {
     height: 100px;
     flex: 1 1 300px;
+    /* flex: <grow> <shrink> <basis> */
 }
 
 .first {
