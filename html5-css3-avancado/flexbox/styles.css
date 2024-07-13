@@ -6,18 +6,18 @@ body {
     display: flex;
     width: 100%;
     background-color: white;
+    justify-content: flex-end;
 }
 
 .box {
     height: 100px;
-    flex: 1 1 300px;
+    /* flex: 1 1 300px; */
     /* flex: <grow> <shrink> <basis> */
+    width: 100px;
 }
 
 .first {
     background-color: red;
-    flex: 2 1 300px;
-    order: 3;
 }
 
 .second {
