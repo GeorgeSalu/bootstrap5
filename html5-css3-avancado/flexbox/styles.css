@@ -4,6 +4,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column-reverse;
     width: 100%;
     background-color: white;
 }
@@ -16,15 +17,12 @@ body {
 
 .first {
     background-color: red;
-    flex-shrink: 1;
 }
 
 .second {
     background-color: green;
-    flex-shrink: 1;
 }
 
 .third {
     background-color: blue;
-    flex-shrink: 2;
 }
