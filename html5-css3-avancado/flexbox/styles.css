@@ -1,0 +1,26 @@
+body {
+    background-color: #DDD;
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    background-color: white;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: green;
+}
+
+.third {
+    background-color: blue;
+}
