@@ -5,15 +5,17 @@ body {
 .container {
     display: flex;
     width: 100%;
+    height: 300px;
     background-color: white;
     justify-content: space-around;
+    align-items: center;
 }
 
 .box {
     height: 100px;
+    width: 100px;
     /* flex: 1 1 300px; */
     /* flex: <grow> <shrink> <basis> */
-    width: 100px;
 }
 
 .first {
