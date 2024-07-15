@@ -1,3 +1,16 @@
+/*
+    display: flex - incia o flex no container
+    flex-grow -  da tamanho ao elemento preenchendo os espacos vazios
+    flex-shrink - o contrario do grow
+    flex-basis - tamanho inicial do elemento, e o resto é preenchido pelo grow
+    flex - <grow> <shrink> <basis>
+    flex-direction - muda a direção que os elementos estão (row, column)
+    flex-order - muda a ordem do elemento individualmente
+    justify-content - alinha os elementos no eixo principal
+    align-items - alinha os elementos no eixo sexundario
+    align-self - alinha o elemento em particular 
+*/
+
 body {
     background-color: #DDD;
 }
