@@ -319,3 +319,11 @@ nav {
     background-color: #2CC76A;
     color: #FFF;
 }
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
