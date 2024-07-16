@@ -271,3 +271,51 @@ nav {
     color: #FFF;
     font-size: 24px;
 }
+
+/* contato */
+
+.contact-container {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+
+}
+
+.contact-container h2 {
+    font-size: 36px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 468px;
+    height: 150px;
+}
+
+.contact-container input[type=submit] {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2CC76A;
+    color: #FFF;
+}
