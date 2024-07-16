@@ -227,3 +227,47 @@ nav {
 .plan .recommended {
     background-color: #F45C57;
 }
+
+/* buscar dominio */
+
+.searchdomain-container {
+    background-color: #34454E;
+    text-align: center;
+    padding: 5em 0;
+}
+
+.searchdomain-container h2 {
+    color: #FFF;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.searchdomain-container p {
+    color: #D5D5D5;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.searchdomain-container input {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchdomain-container input[type=text] {
+    margin-bottom: 25px;
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.searchdomain-container input[type=submit] {
+    background-color: #2CC76A;
+    padding: 15px 30px;
+    color: #FFF;
+    font-size: 24px;
+}
