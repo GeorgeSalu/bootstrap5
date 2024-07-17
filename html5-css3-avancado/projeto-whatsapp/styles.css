@@ -97,3 +97,37 @@ ul {
 .activate-notification {
     font-size: 13px;
 }
+
+/* search container */
+
+.search-container {
+    height: 50px;
+    width: 100%;
+    padding-left: 7.5px;
+    padding-top: 7.5px;
+    background-color: #F8F8F8;
+    position: relative;
+    color: #BDC1C3;
+    box-sizing: border-box;
+}
+
+#contact-search {
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    font-size: 14px;
+}
+
+#search {
+    border: none;
+    height: 35px;
+    width: 385px;
+    padding-left: 60px;
+    border-radius: 17.5px;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+#search::placeholder {
+    color: #BDC1C3;
+}
