@@ -327,7 +327,7 @@ ul {
     left: -10px;
 }
 
-.user-massage {
+.user-message {
     background-color: #DCF8C6;
     float: right;
 }
@@ -341,4 +341,40 @@ ul {
     position: absolute;
     top: 0;
     right: -10px;
+}
+
+/* send message */
+
+.sendmessage-container {
+    background-color: #EFEFEF;
+    border-left: 1px solid #DDD;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+}
+
+#chatmessage {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    background-color: #FFF;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 815px;
+}
+
+.sendmessage-container i {
+    font-size: 24px;
+    color: #80868A;
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+}
+
+.fa-microphone {
+    float: right;
 }
