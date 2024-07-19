@@ -9,3 +9,55 @@ a,
 a:visited {
     color: #1A0DAB;
 }
+
+/* header */
+header {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+#input-box {
+    padding-top: 20px;
+    padding-bottom: 9px;
+}
+
+#input-box img {
+    width: 92px;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+#input-box form {
+    display: inline-block;
+    position: relative;
+}
+
+#input-box form input {
+    height: 44px;
+    border-radius: 22px;
+    width: 597px;
+    border: 1px solid #DFE1E5;
+    padding: 0 21px;
+    margin-left: 146px;
+    font-size: 16px;
+}
+
+#search-icon,
+#keyboard-icon,
+#mic-icon {
+    position: absolute;
+    top: 14px;
+    font-size: 18px;
+}
+
+#search-icon {
+    right: 18px;
+}
+
+#keyboard-icon {
+    right: 53px;
+}
+
+#mic-icon {
+    right: 88px;
+}
