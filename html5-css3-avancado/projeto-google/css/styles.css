@@ -127,6 +127,8 @@ aside {
 
 #results {
     color: #70757A;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .search-result-box {
@@ -199,4 +201,9 @@ aside {
 
 .related-results li {
     display: inline-block;
+}
+
+.related-results li a {
+    font-size: 14px;
+    text-decoration: none;
 }
