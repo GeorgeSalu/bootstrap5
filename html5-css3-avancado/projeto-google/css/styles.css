@@ -101,3 +101,24 @@ header {
 #links-list .active a {
     color: #1A73E8;
 }
+
+/* corpo do site */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 165px;
+    padding-right: 70px;
+}
+
+main {
+    flex: 2 1 0;
+    padding-right: 35px;
+}
+
+aside {
+    flex: 1 1 0;
+    min-width: 460px;
+    margin-top: 50px;
+    position: relative;
+}
