@@ -207,3 +207,72 @@ aside {
     font-size: 14px;
     text-decoration: none;
 }
+
+/* galeria aside */
+
+#gallery-box {
+    height: 186px;
+    position: relative;
+}
+
+#first-img {
+    border-top-left-radius: 10px;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 305px;
+    height: 186px;
+    position: absolute;
+    top: 0;
+    left: 149px;
+}
+
+#gallery div {
+    flex: 1 1 30%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+#gallery-img1 {
+    background-image: url('../img/turing1.jpg');
+}
+
+#gallery-img2 {
+    background-image: url('../img/turing2.jpg');
+}
+
+#gallery-img3 {
+    background-image: url('../img/turing3.jpg');
+}
+
+#gallery-img4 {
+    background-image: url('../img/turing4.jpg');
+}
+
+#gallery-img5 {
+    background-image: url('../img/turing5.jpg');
+}
+
+#gallery-img6 {
+    background-image: url('../img/turing6.jpg');
+}
+
+#moreimg-btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 13px;
+    color: #FFF;
+    background: rgba(0, 0, 0, .6);
+    text-decoration: none;
+    border-top-left-radius: 5px;
+}
+
+#moreimg-btn span {
+    margin-right: 5px;
+}
