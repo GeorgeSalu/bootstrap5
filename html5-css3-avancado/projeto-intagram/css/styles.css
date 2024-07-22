@@ -77,3 +77,58 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+/* separador */
+
+.separator {
+    position: relative;
+}
+
+.separator .line {
+    border-top: 1px solid #BDBDBD;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.separator span {
+    position: absolute;
+    text-transform: uppercase;
+    color: #BBB;
+    width: 50px;
+    top: -6px;
+    left: 50%;
+    margin-left: -25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* febook login */
+
+#facebook-login {
+    margin-bottom: 25px;
+}
+
+#facebook-login a {
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-login img {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+/* esqueceu a senha */
+#forgot-pass {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+#forgot-pass a {
+    text-decoration: none;
+    color: #373799;
+}
