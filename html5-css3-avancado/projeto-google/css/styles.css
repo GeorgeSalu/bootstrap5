@@ -276,3 +276,35 @@ aside {
 #moreimg-btn span {
     margin-right: 5px;
 }
+
+/* infors aside */
+
+#about-box {
+    border-bottom: 1px solid #EBEBEB;
+    padding: 0 15px;
+}
+
+#name {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+#role {
+    color: #70757A;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-size: 14px;
+    color: #222;
+    line-height: 1.57;
+    padding: 0 15px;
+}
+
+.about-text span {
+    font-weight: bold;
+}
