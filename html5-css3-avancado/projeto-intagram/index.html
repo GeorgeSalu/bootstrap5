@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>testando home instagram</h1>
+    <main>
+        <div id="main-container">
+            <!-- banner lateral -->
+            <div id="banner-container">
+                <img src="img/imagem_cel_exterior.png" alt="crie uma conta no instagram">
+            </div>
+            <!-- formulario de login -->
+            <div id="form-container">
+                <div id="form-box">
+                    <!-- logo -->
+                    <img id="logo-insta" src="img/logo_instagram.png" alt="instagram">
+                    <!-- form login -->
+                    <form id="login-form">
+                        <input type="text" name="username" placeholder="telefone, nome do usuario ou email" >
+                        <input type="password" name="password" placeholder="Senha" >
+                        <input type="submit" value="Enviar">
+                    </form>
+                    <!-- separador -->
+                    <div class="separator">
+                        <div class="line"></div>
+                        <span>Ou</span>
+                    </div>
+                    <!-- links alternativos -->
+                    <div id="other-links"></div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
