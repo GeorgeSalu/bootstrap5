@@ -1,4 +1,7 @@
-h1 {
-    color: red;
-    font-family: Montserrat;
+:root {
+    --primary: #EB1CCC;
+    --secondary: #95989A;
+    --text-color: #FFF;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
 }
