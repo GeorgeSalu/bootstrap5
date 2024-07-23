@@ -118,9 +118,9 @@
 }
 
 #facebook-login img {
-    font-weight: bold;
-    font-size: 13px;
-    margin-top: 1px;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
 }
 
 /* esqueceu a senha */
