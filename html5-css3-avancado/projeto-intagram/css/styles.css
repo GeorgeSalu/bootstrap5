@@ -173,3 +173,35 @@
     width: 136px;
     height: 40px;
 }
+
+/* rodape */
+
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+}
+
+footer #footer-links {
+    list-style: none;
+}
+
+footer #footer-links li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: #00376B;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#copyright {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #8E8E8E;
+    margin-top: 10px;
+}
