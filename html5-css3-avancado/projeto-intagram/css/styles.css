@@ -219,4 +219,21 @@ footer #footer-links li {
         margin-top: 0;
     }
 
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+        text-align: center;
+    }
+
+    #footer-links li {
+        margin-bottom: 10px;
+    }
+
 }
