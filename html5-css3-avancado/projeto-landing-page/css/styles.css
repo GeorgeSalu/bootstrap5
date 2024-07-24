@@ -263,3 +263,28 @@ body {
     font-weight: 600;
     font-size: 1.2em;
 }
+
+/* footer */
+
+#footer {
+    text-align: center;
+    color: var(--secondary);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+#footer p:nth-child(2) {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+#footer span {
+    font-weight: bold;
+}
