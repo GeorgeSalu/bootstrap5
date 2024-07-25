@@ -13,3 +13,13 @@ h1 {
     }
 
 }
+
+/* outros modos */
+/* scren, print, speech, all */
+@media print and (max-width: 600px) {
+
+    h1 {
+        color: green;
+    }
+
+}
