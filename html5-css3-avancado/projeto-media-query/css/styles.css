@@ -1,0 +1,15 @@
+h1 {
+    color: red;
+}
+
+/* 2 - sintaxe */
+
+@media screen and (max-width: 500px) {
+
+    /* max width = telas menores que alguma resolucao */
+
+    h1 {
+        color: blue;
+    }
+
+}
