@@ -35,3 +35,11 @@ h1 {
         color: yellow;
     }
 }
+
+.container {
+    background-color: #999;
+}
+
+.container-fluid {
+    background-color: #888;
+}
