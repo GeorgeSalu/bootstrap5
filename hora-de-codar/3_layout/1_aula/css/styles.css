@@ -43,3 +43,19 @@ h1 {
 .container-fluid {
     background-color: #888;
 }
+
+/* container breakppints */
+.container-sm {
+    margin-bottom: 30px;
+    border: 2px solid blue;
+}
+
+.container-md {
+    margin-bottom: 30px;
+    border: 2px solid crimson;
+}
+
+.container-lg {
+    margin-bottom: 30px;
+    border: 2px solid chocolate;
+}
