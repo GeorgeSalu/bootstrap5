@@ -79,7 +79,8 @@ h1 {
 .col-2,
 .col-11,
 .col-1,
-.col-6 {
+.col-6,
+.col-3 {
     border: 2px dotted red;
     height: 100%;
     margin: 0;
@@ -99,6 +100,7 @@ h1 {
     height: 100%;
 }
 
-.col-6 {
+.col-6,
+.col-3 {
     height: 50px;
 }
