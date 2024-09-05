@@ -31,6 +31,8 @@ i {
     color: #FFF;
 }
 
+/* header */
+
 #header {
     text-align: center;
     padding: 20px;
@@ -50,6 +52,8 @@ i {
     width: 40px;
     margin-right: 15px;
 }
+
+/* navbar */
 
 #navbar {
     padding: 10px;
