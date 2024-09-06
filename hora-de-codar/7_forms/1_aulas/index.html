@@ -27,5 +27,26 @@
 
 
     </div>
+
+    <!-- form desabilitado -->
+    <div class="col-4 m-4">
+        <h2>formulario desabilitado</h2>
+        <form>
+            <fieldset disabled>
+                <div class="mb-4">
+                    <label for="email" class="form-label">e-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailhelp" placeholder="insira seu email" disabled >
+                    <div id="emailhelp" class="form-text">nao conpartilhamos seu endereco de email</div>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="digite sua senha" >
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </fieldset>
+        </form>
+
+
+    </div>
 </body>
 </html>
