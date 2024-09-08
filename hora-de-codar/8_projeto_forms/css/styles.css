@@ -24,3 +24,42 @@ body {
 #form-container a:hover {
     color: #6C63FF;
 }
+
+#form-container form {
+    padding-bottom: 50px;
+}
+
+#form-container .form-control {
+    border: none;
+    border-bottom: 1px solid #CCC;
+    border-radius: 0;
+}
+
+#form-container .form-control:focus {
+    box-shadow: none;
+}
+
+#form-container .form-floating label {
+    color: #CCC;
+}
+
+#form-container .form-floating>.form-control:focus~label {
+    color: #222;
+}
+
+#form-container input[type="submit"] {
+    background-color: #6C63FF;
+    border-color: #6C63FF;
+}
+
+/* image */
+.row.align-items-center {
+    align-content: center;
+    height: 100%;
+    padding: 50px 0;
+}
+
+#link-container {
+    text-align: center;
+    padding-top: 50px;
+}
