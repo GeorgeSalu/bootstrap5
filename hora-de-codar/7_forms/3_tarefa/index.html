@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>tarefa 3</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h1>cadastro de produto</h1>
+                <form>
+                    <div class="mb-4">
+                        <label for="title" class="mb-2">titulo</label>
+                        <input type="text" class="form-control" name="title" id="title" placeholder="digite o titulo do produto" required >
+                    </div>
+                    <div class="mb-4">
+                        <label for="description" class="mb-2 form-label">descricao</label>
+                        <textarea name="description" id="description" placeholder="descreva o produto" class="form-control"></textarea>
+                    </div>
+                    <div class="mb-4">
+                        <label for="category" class="form-label mb-2">Selecione a categoria</label>
+                        <select class="form-select" name="category" id="category">
+                            <option value="eletrodomesticos">eletrodomesticos</option>
+                            <option value="moveis">moveis</option>
+                            <option value="eletronicos">eletronicos</option>
+                            <option value="jardim">jardim</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <input  type="checkbox" class="form-check-input" value="" id="stock" name="stock">
+                        <label for="stock" class="form-check-label" >Esta em estoque</label>
+                    </div>
+                    <div class="mb-4">
+                        <input type="submit" class="btn btn-primary" value="cadastrar produto" >
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
