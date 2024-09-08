@@ -14,10 +14,17 @@
         <div class="row justify-content-center m-4">
             <div class="col-6">
                 <h2>Faca o login para continuar</h2>
-                <form class="row needs-validations">
+                <form class="row needs-validations" novalidate>
                     <div class="col-12 mb-4">
                         <label for="email" class="form-label">e-mail</label>
                         <input type="email" class="form-control" id="email" placeholder="digite o seu email" required >
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <label for="password" class="form-label">senha</label>
+                        <input type="password" class="form-control" id="password" placeholder="digite sua senha" required >
                         <div class="valid-feedback">
                             ok
                         </div>

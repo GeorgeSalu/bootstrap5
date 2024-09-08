@@ -10,7 +10,7 @@
                 if (!form.checkValidity()) {
 
                     event.preventDefault();
-                    event.preventPropagation();
+                    event.stopPropagation();
 
                 }
 
