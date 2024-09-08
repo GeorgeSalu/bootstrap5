@@ -11,6 +11,13 @@ body {
     padding: 25px;
 }
 
+@media(min-wodth: 768px) {
+    #form-container {
+        margin: 50px auto;
+        padding: 50px;
+    }
+}
+
 #form-container h2 {
     font-weight: 900;
     margin-bottom: 30px;
@@ -50,6 +57,16 @@ body {
 #form-container input[type="submit"] {
     background-color: #6C63FF;
     border-color: #6C63FF;
+}
+
+.btn.btn-primary {
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    .btn.btn-primary {
+        width: auto;
+    }
 }
 
 /* image */
