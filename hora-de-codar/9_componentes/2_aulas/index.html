@@ -38,5 +38,34 @@
         </div>
     </nav>
 
+
+    <!-- off canvas -->
+    <div class="container m-4">
+        <button 
+            class="btn btn-primary" 
+            type="button" 
+            data-bs-toggle="offcanvas" 
+            data-bs-target="#offcanvasRight" 
+            aria-controls="offcanvasRight">
+            abrir carrinho
+        </button>
+        <div 
+            class="offcanvas offcanvas-end" 
+            tabindex="-1" 
+            id="offcanvasRight" 
+            aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasLabel">Carrinho</h5>
+                <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li>produto 1</li>
+                    <li>produto 2</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
