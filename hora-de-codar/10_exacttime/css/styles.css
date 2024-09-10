@@ -127,3 +127,13 @@ body {
 #search-form input::placeholder {
     color: #fff;
 }
+
+/* bottom navbar */
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+    font-weight: 600;
+    color: #fff;
+}
