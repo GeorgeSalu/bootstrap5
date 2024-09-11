@@ -137,3 +137,28 @@ body {
     font-weight: 600;
     color: #fff;
 }
+
+/* banners */
+#banners-container {
+    padding: 0;
+}
+
+.carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+@media (min-width: 758px) {
+    #slider .carousel-item {
+        height: 600px;
+    }
+
+
+
+}
