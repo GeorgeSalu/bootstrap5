@@ -155,10 +155,19 @@ body {
 }
 
 @media (min-width: 758px) {
-    #slider .carousel-item {
+
+    #slider .carousel-item,
+    #slider img {
         height: 600px;
     }
 
+    .carousel-caption {
+        left: 23%;
+        right: 23%;
+    }
 
+    .carousel-caption h5 {
+        font-size: 4em;
+    }
 
 }
