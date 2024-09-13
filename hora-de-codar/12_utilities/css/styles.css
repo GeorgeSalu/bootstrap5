@@ -9,3 +9,7 @@ body {
 .altura {
     height: 500px;
 }
+
+.box {
+    border: 1px solid red;
+}
