@@ -11,3 +11,14 @@ body {
     background-color: blue;
     width: 50px;
 }
+
+.box-sticky,
+.box-fixed {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.box-fixed {
+    background-color: blueviolet;
+}
