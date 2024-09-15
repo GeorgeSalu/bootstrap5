@@ -43,3 +43,16 @@ div p {
 #p-super-especifico {
     color: green;
 }
+
+/* cores */
+.nome {
+    color: orange;
+}
+
+.hexa {
+    color: #6a40c4;
+}
+
+.rgba {
+    color: rgba(17, 197, 214, 1);
+}
