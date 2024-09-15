@@ -106,3 +106,25 @@ div p {
 .variant {
     font-variant: small-caps;
 }
+
+/* boxmodel */
+
+body {
+    margin: 0;
+}
+
+.boxmodel {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* padding: 20px; */
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.paragrafo-box {
+    color: #000;
+    margin: 0;
+}
