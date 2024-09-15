@@ -56,3 +56,15 @@ div p {
 .rgba {
     color: rgba(17, 197, 214, 1);
 }
+
+/* backgrounds */
+.div-backgrounds {
+    height: 300px;
+
+}
+
+.titulo-background {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
