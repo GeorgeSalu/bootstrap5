@@ -154,7 +154,7 @@ body {
 /* positions */
 /* static - flow no html, nao é alterada por top, left, right e bottom */
 /* relative - flow no html, ela é alterada pelo top, left , right r bottom  */
-/* fixed */
+/* fixed - posiciona em qualquer lugar da tela, e é posicionada em relacao em html */
 /* absolute */
 /* sticky */
 
