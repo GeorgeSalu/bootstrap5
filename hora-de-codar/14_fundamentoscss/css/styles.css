@@ -152,7 +152,7 @@ body {
 }
 
 /* positions */
-/* static */
+/* static - flow no html, nao é alterada por top, left, right e bottom */
 /* relative */
 /* fixed */
 /* absolute */
