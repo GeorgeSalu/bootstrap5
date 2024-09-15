@@ -156,7 +156,7 @@ body {
 /* relative - flow no html, ela é alterada pelo top, left , right r bottom  */
 /* fixed - posiciona em qualquer lugar da tela, e é posicionada em relacao em html */
 /* absolute - posiciona em qualquer lugar, e ela respeita o elemento antecessor */
-/* sticky */
+/* sticky - esta no flow do html, porem ao passa o scroll ela funciona como fixed */
 
 .div-position {
     width: 500px;
