@@ -68,3 +68,41 @@ div p {
     background-color: #000;
     color: #fff;
 }
+
+/* fontes */
+.family {
+    color: #000;
+    font-size: 40px;
+}
+
+.family.serif {
+    color: green;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.variant {
+    font-variant: small-caps;
+}
