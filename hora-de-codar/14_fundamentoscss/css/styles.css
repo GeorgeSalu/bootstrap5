@@ -117,11 +117,19 @@ body {
     width: 200px;
     height: 200px;
     background-color: red;
+    /* geral 
     /* padding: 20px; */
+    /* especifico */
     padding-top: 30px;
     padding-left: 10px;
     padding-right: 20px;
     padding-bottom: 5px;
+    /* especifico agrupado 
+    padding: 30px 20px 5px 10px */
+    /* especifico agrupado 3 medidas - top, right-left, bottom
+    padding: 30px 20px 5px */
+    /* especifico agrupado 2 medidas - top-bottom, right-left
+    padding: 30px 20px */
 }
 
 .paragrafo-box {
