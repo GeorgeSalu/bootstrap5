@@ -21,3 +21,12 @@ h2 {
     comentario 
     em varias linhas
 */
+
+.p-texto {
+    color: lightgreen;
+}
+
+#titulo-app {
+    color: purple;
+    font-size: 40px;
+}
