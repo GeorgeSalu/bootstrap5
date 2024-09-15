@@ -139,6 +139,10 @@ body {
     margin: 50px;
     /*margin: 5px 10px 10px 7px; */
     margin: 100px;
+    /* 
+    display: none;
+    display: inline;
+    display: block */
     display: inline-block;
 }
 
