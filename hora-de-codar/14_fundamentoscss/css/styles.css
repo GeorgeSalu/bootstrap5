@@ -30,3 +30,16 @@ h2 {
     color: purple;
     font-size: 40px;
 }
+
+/* especificdade */
+div p {
+    color: red;
+}
+
+.p-dentro-da-div {
+    color: blue;
+}
+
+#p-super-especifico {
+    color: green;
+}
