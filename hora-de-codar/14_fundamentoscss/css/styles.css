@@ -204,3 +204,26 @@ body {
     background-color: gray;
     top: 0px;
 }
+
+/* float */
+.container {
+    padding: 50px;
+}
+
+.img-float {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.div-float {
+    overflow: auto;
+}
+
+.p-float {
+    color: #000;
+}
+
+.float-right {
+    float: right;
+}
