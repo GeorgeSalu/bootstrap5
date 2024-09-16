@@ -273,3 +273,13 @@ body {
     height: 2em;
     background-color: purple;
 }
+
+html {
+    font-size: 20px;
+}
+
+.rem-1 {
+    width: 1rem;
+    height: 1rem;
+    background-color: blue;
+}
