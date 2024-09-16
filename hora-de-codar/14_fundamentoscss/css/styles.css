@@ -232,6 +232,8 @@ body {
     clear: both;
 }
 
+/* units */
+
 .pixel-1 {
     background-color: red;
     width: 100px;
