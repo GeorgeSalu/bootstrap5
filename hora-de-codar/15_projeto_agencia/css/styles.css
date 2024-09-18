@@ -144,3 +144,9 @@ html {
 #design-title {
     color: #73bfb8;
 }
+
+/* sobre a empresa */
+.footer-container {
+    background-image: url('../img/rodape.jpg');
+    background-position: center;
+}
