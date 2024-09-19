@@ -5,3 +5,15 @@ body {
 p {
     color: green;
 }
+
+.meu-paragrafo {
+    background-color: black;
+    color: red;
+}
+
+#titulo-principal {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
