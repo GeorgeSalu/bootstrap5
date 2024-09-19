@@ -1,9 +1,11 @@
 body {
     padding: 20px;
+    padding-bottom: 500px;
 }
 
 p {
     color: green;
+    font-size: 30px;
 }
 
 /* classes e ids */
@@ -41,4 +43,34 @@ h1 {
 
 .rgb {
     color: rgb(100, 95, 44);
+}
+
+/* fontes */
+.serifada {
+    font-family: Georgia;
+}
+
+.sem-serifa {
+    font-family: Helvetica;
+}
+
+.monoespacada {
+    font-family: 'Courier New';
+}
+
+.tamanho-fonte-grande {
+    font-size: 64px;
+}
+
+.tamanho-fonte-pequeno {
+    font-size: 12px;
+}
+
+.peso-fonte {
+    font-weight: 700;
+}
+
+
+.text-italico {
+    font-style: italic;
 }
