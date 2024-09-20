@@ -98,3 +98,10 @@ h1 {
 .transform-minusculo {
     text-transform: uppercase;
 }
+
+/* espacamento de linhas e letras */
+.espacamento-texto {
+    width: 150px;
+    line-height: 40px;
+    letter-spacing: 8px;
+}
