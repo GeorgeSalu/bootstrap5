@@ -77,8 +77,11 @@ h1 {
     font-style: italic;
 }
 
+/* box model */
 .box-model {
     width: 200px;
     height: 100px;
     border: 1px solid blue;
+    padding: 20px;
+    margin: 20px;
 }
