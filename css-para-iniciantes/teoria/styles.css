@@ -85,3 +85,15 @@ h1 {
     padding: 20px;
     margin: 20px;
 }
+
+.alinhamento {
+    text-align: center;
+}
+
+.transform-maiusculo {
+    text-transform: lowercase;
+}
+
+.transform-minusculo {
+    text-transform: uppercase;
+}
