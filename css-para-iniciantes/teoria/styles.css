@@ -186,3 +186,16 @@ h1 {
     background-color: red;
     padding: 4px;
 }
+
+/* especifidade */
+h2 {
+    color: red;
+}
+
+.titulo {
+    color: green;
+}
+
+#meu-titulo-preferido {
+    color: blue;
+}
