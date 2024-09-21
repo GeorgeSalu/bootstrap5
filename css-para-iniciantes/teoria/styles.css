@@ -118,3 +118,22 @@ h1 {
 .estilo-hover:hover {
     background-color: aqua;
 }
+
+/* link em button */
+.btn {
+    background-color: #34ae43;
+    border: 3px solid #234966;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    padding: 12px 7px;
+    text-align: center;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #234966;
+}
