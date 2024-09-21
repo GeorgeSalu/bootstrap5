@@ -172,3 +172,9 @@ h1 {
     border-bottom: 2px solid #342299;
     color: #fff;
 }
+
+/* pseudo seletor */
+.primeiro-elemento p:first-child {
+    color: purple;
+    font-weight: bold;
+}
