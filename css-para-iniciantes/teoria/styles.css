@@ -105,3 +105,16 @@ h1 {
     line-height: 40px;
     letter-spacing: 8px;
 }
+
+/* links */
+.decoration {
+    text-decoration: none;
+}
+
+.visitado:visited {
+    color: orange;
+}
+
+.estilo-hover:hover {
+    background-color: aqua;
+}
