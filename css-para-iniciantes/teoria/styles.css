@@ -178,3 +178,11 @@ h1 {
     color: purple;
     font-weight: bold;
 }
+
+/* pseudo elemento */
+.primeira-letra::first-letter {
+    font-size: 40px;
+    color: blue;
+    background-color: red;
+    padding: 4px;
+}
