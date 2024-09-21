@@ -199,3 +199,8 @@ h2 {
 #meu-titulo-preferido {
     color: blue;
 }
+
+/* important */
+h2 {
+    color: purple !important;
+}
