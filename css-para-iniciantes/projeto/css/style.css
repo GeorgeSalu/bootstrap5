@@ -13,3 +13,14 @@ header {
     text-align: center;
     border-bottom: 3px solid #0f642f;
 }
+
+
+
+/* footer */
+footer {
+    background-color: #3db36b;
+    color: #fff;
+    border-top: 3px solid #0f642f;
+    text-align: center;
+    padding: 80px;
+}
