@@ -1,3 +1,19 @@
+/* regra: valor (especifico,medida) */
 p {
     color: red;
+}
+
+/* seletores basicos */
+h4 {
+    font-size: 25px;
+}
+
+.titulo {
+    color: purple;
+    font-size: 40px;
+}
+
+#paragrafo-especial {
+    font-style: italic;
+    color: aqua;
 }
