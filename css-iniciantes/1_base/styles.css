@@ -1,6 +1,6 @@
 /* regra: valor (especifico,medida) */
 p {
-    color: red;
+    color: black;
 }
 
 /* seletores basicos */
@@ -27,4 +27,28 @@ h4 {
 #paragrafo-especial {
     font-style: italic;
     color: aqua;
+}
+
+/* 4 - propridades de texto */
+.basic-text {
+    font-family: Arial;
+    color: #47db93;
+}
+
+.styled-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+.weight-text {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fancy-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: #84847a;
+    text-align: center;
+    text-transform: uppercase;
 }
