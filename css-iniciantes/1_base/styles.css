@@ -4,6 +4,11 @@ p {
 }
 
 /* seletores basicos */
+/* 
+    seletores de tag => tag => especifidade 1
+    seletores de classe => . => especifidade 2
+    seletores de id => # => especifidade 3
+*/
 h4 {
     font-size: 25px;
 }
