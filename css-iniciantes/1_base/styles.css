@@ -108,3 +108,11 @@ h4 {
 .bold-link {
     font-weight: 600;
 }
+
+/* box model */
+.width-height {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #123;
+    background-color: #321;
+}
