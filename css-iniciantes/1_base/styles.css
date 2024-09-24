@@ -52,3 +52,24 @@ h4 {
     text-align: center;
     text-transform: uppercase;
 }
+
+/* 5 - cores */
+.hex-color {
+    color: #ff6310;
+}
+
+.rgb-color {
+    color: rgb(21, 113, 252);
+}
+
+.hsl-color {
+    color: hsl(120, 40%, 80%);
+}
+
+.rgba-color {
+    background-color: rgba(255, 70, 100, 0.5);
+}
+
+.hsla-color {
+    background-color: hsla(120, 50%, 30%, 0.3);
+}
