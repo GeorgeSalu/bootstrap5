@@ -81,3 +81,27 @@ h4 {
 .hsla-color {
     background-color: hsla(120, 50%, 30%, 0.3);
 }
+
+/* 6 - estilizacao links */
+.simple-link {
+    text-decoration: none;
+    color: #312333;
+}
+
+.fancy-link {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.hover-link {
+    text-decoration: none;
+}
+
+.hover-link:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.bold-link {
+    font-weight: 600;
+}
