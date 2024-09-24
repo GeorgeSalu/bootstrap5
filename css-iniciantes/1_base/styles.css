@@ -109,10 +109,21 @@ h4 {
     font-weight: 600;
 }
 
-/* box model */
+/* 7 - box model */
 .width-height {
     width: 200px;
     height: 100px;
     border: 2px solid #123;
     background-color: #321;
+}
+
+/* espacamento interno, que pode ser adicionado aos 4 cantos */
+.padding-exemple {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #123;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
 }
