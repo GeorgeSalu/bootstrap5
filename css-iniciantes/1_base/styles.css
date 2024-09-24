@@ -54,19 +54,27 @@ h4 {
 }
 
 /* 5 - cores */
+/* 99% - cores em hex */
+/* nome de cores = nunca */
+/* 1% = rgba => a alpha opacidade */
 .hex-color {
+    /* 6 algarismos, precedidos por #, A-F 0-9 */
+    /* F -> mas claro, 0 -> mais escuro */
     color: #ff6310;
 }
 
 .rgb-color {
+    /* red, green, blue */
     color: rgb(21, 113, 252);
 }
 
+/* hue, saturation, lightness */
 .hsl-color {
     color: hsl(120, 40%, 80%);
 }
 
 .rgba-color {
+    /* 0 -> invisivel, 1 -> totalmente visivel */
     background-color: rgba(255, 70, 100, 0.5);
 }
 
