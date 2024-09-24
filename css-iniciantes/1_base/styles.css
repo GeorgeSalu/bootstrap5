@@ -97,11 +97,14 @@ h4 {
     text-decoration: none;
 }
 
+/* hover = evento de quando o usuario passa o mouse no elemento */
 .hover-link:hover {
     text-decoration: underline;
     color: orange;
 }
 
+/* 100-900 => mas nem totodas as fontes tem todos */
+/* valores diferentes, tendo o mesmo weight */
 .bold-link {
     font-weight: 600;
 }
