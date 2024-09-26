@@ -147,3 +147,55 @@ h4 {
 
 /* short-hand = 99% */
 /* ordem: todos os lados, cima e laterais, especificos */
+
+/* 8 - positions */
+.static-example {
+    position: static;
+    background-color: #321;
+    border: 1px solid #000;
+}
+
+.relative-example {
+    position: relative;
+    top: 40px;
+    left: 50px;
+    background-color: #333;
+}
+
+.absolute-example {
+    position: absolute;
+    background-color: #941;
+    top: 10px;
+    left: 250px;
+}
+
+.fixed-example {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #afafaf;
+    order: 2px solid #000;
+}
+
+.sticky-example {
+    position: static;
+    top: 0;
+    background-color: #adadad;
+    border: 2px solid #000;
+}
+
+
+.relative-container {
+    margin-top: 300px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.absolute-inside-relative {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #941;
+}
