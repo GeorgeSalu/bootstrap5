@@ -20,3 +20,17 @@ h1 {
 .bg-opacity {
     background-color: rgba(0, 0, 255, 0.5);
 }
+
+/* exercicio 4 */
+.padding-example {
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.width-height {
+    margin: 15px;
+    border: 1px solid blue;
+    padding: 10px;
+    width: 100px;
+    height: 400px;
+}
