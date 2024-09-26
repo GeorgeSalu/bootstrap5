@@ -1,3 +1,22 @@
+/* exercicio 1 */
 .background-highlight {
     background-color: yellow;
+}
+
+/* exercicio 2 */
+h1 {
+    background-color: lightblue;
+}
+
+.text-large {
+    font-size: 24px;
+}
+
+/* exercicio 3 */
+.hexa-color {
+    color: #1515e0;
+}
+
+.bg-opacity {
+    background-color: rgba(0, 0, 255, 0.5);
 }
