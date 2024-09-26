@@ -34,3 +34,20 @@ h1 {
     width: 100px;
     height: 400px;
 }
+
+/* exercicio 5 */
+.relative-container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.absolutely-positioned {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
