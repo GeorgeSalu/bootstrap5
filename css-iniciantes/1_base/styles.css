@@ -136,6 +136,7 @@ h4 {
     margin: 30px;
 }
 
+/* shorthand = 1 todos, 2 valores superiores e laterais */
 .complete-box {
     width: 200px;
     height: 100px;
@@ -143,3 +144,6 @@ h4 {
     padding: 50px 100px;
     margin: 10px 20px 30px 40px;
 }
+
+/* short-hand = 99% */
+/* ordem: todos os lados, cima e laterais, especificos */
