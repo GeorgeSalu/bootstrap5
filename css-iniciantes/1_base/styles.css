@@ -199,3 +199,36 @@ h4 {
     right: 0;
     background-color: #941;
 }
+
+.flex-container {
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 1000px;
+}
+
+.flex-item {
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid blue;
+}
+
+/* comeco ou fim - start ou end */
+.flex-container {
+    justify-content: flex-end;
+}
+
+/* centro */
+.flex-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-container {
+    flex-direction: column;
+}
