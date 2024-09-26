@@ -127,3 +127,11 @@ h4 {
     padding-bottom: 50px;
     padding-left: 20px;
 }
+
+/* margem = espacamento externo */
+.margin-exemple {
+    width: 200px;
+    height: 100px;
+    border: 2px solid #123;
+    margin: 30px;
+}
