@@ -200,6 +200,7 @@ h4 {
     background-color: #941;
 }
 
+/* 9 - flexbox */
 .flex-container {
     display: flex;
     border: 2px solid #000;
@@ -232,3 +233,7 @@ h4 {
 .flex-container {
     flex-direction: column;
 }
+
+/* flex sempre precisa de um elemento pai */
+/* flex ajuda a gente a posicionar os itens */
+/* para varios elementos */
