@@ -74,3 +74,22 @@ html {
     background-color: blueviolet;
     transform: scale(1.2);
 }
+
+/*  4 - gradient = degrade  */
+.linear-gradient-box,
+.radial-gradient-box,
+.multiple-gradient-box {
+    height: 200px;
+}
+
+.linear-gradient-box {
+    background-image: linear-gradient(to right, #123, #234, #456, #890);
+}
+
+.radial-gradient-box {
+    background-image: radial-gradient(circle, red, orange, yellow);
+}
+
+.multiple-gradient-box {
+    background-image: linear-gradient(to left, rgba(100, 150, 255), rgba(100, 80, 255)), radial-gradient(circle, red, orange, yellow);
+}
