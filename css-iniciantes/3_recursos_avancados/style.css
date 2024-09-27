@@ -1,5 +1,6 @@
 html {
     font-size: 15px;
+    margin-bottom: 1000px;
 }
 
 /* 1 - estilos de listas */
@@ -43,4 +44,33 @@ html {
 /* rem, fonte controlada pelo root el */
 .rem-text {
     font-size: 2rem;
+}
+
+/* 4 - pseudo classes */
+.styled-list {
+    list-style-type: none;
+}
+
+.styled-list li:first-child {
+    color: red;
+}
+
+.styled-list li:last-child {
+    color: blue;
+}
+
+.styled-list li::before {
+    content: "* ";
+}
+
+.hover-box {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.hover-box:hover {
+    background-color: blueviolet;
+    transform: scale(1.2);
 }
