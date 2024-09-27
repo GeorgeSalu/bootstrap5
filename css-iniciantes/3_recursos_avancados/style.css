@@ -16,7 +16,7 @@ html {
     list-style-image: url('img/circle.png');
 }
 
-
+/* 3 - unidades de medida */
 .container {
     width: 80%;
     border: 1px solid blue;
@@ -34,12 +34,13 @@ html {
     border: 1px solid green;
 }
 
-
+/* 2x o tamanho de fonte do el. pai */
+/* em fonte controlada pelo el. pai */
 .em-text {
     font-size: 2em;
 }
 
-
+/* rem, fonte controlada pelo root el */
 .rem-text {
     font-size: 2rem;
 }
