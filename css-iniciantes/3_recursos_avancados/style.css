@@ -17,7 +17,7 @@ html {
     list-style-image: url('img/circle.png');
 }
 
-/* 3 - unidades de medida */
+/* 2 - unidades de medida */
 .container {
     width: 80%;
     border: 1px solid blue;
@@ -46,7 +46,7 @@ html {
     font-size: 2rem;
 }
 
-/* 4 - pseudo classes */
+/* 3 - pseudo classes */
 .styled-list {
     list-style-type: none;
 }
