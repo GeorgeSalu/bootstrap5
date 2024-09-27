@@ -68,4 +68,21 @@ body {
     text-decoration: none;
     font-size: 20px;
     border-radius: 50%;
+    transition: 0.4s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.facebook {
+    background-color: #0056b3;
+}
+
+.instagram {
+    background-color: #e1306c;
+}
+
+.linkedin {
+    background-color: #0077b5;
 }
