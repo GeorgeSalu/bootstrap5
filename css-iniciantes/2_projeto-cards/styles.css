@@ -1,0 +1,14 @@
+/* css geral */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    /* centraliza horizontal */
+    justify-content: center;
+    /* centraliza vertical */
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
