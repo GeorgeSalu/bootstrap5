@@ -66,3 +66,21 @@
 .right {
     text-align: right;
 }
+
+/* exercicio 5 */
+button {
+    display: block;
+    margin: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
