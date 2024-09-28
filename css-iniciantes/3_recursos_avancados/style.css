@@ -148,3 +148,20 @@ html {
     z-index: 3;
     background-color: red;
 }
+
+/* 7 - variaveis */
+:root {
+    --main-color: #4caf50;
+    --padding-value: 10px;
+    --text-color: #fff;
+}
+
+.content {
+    padding: var(--padding-value);
+}
+
+.text {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: var(--padding-value);
+}
