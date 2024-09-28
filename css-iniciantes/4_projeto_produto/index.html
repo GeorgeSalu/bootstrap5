@@ -36,21 +36,82 @@
     <!-- detalhes do produto -->
     <div class="product-container">
         <div class="product-image">
-            <img src="img/produto.webp" alt="produto" >
+          <img src="img/produto.webp" alt="Camisa" />
         </div>
-        <div class="product-detail">
-            <h1>gola polo sport</h1>
+  
+        <div class="product-details">
+          <h1 class="product-title">Gola polo sport</h1>
+  
+          <div class="product-meta">
+            <div class="product-rating-and-reviews">
+              <div class="product-rating">
+                <!-- Ícones de estrelas para avaliação (FontAwesome) -->
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span class="reviews-count">78 Avaliações</span>
+              </div>
+            </div>
+  
+            <p class="product-price">R$ 100,00</p>
+  
+            <div class="product-colors">
+              <h3>Cores Disponíveis</h3>
+              <ul class="color-list">
+                <li class="color-option" data-color="Dark Navy"></li>
+                <li class="color-option" data-color="Black"></li>
+                <li class="color-option" data-color="Grey"></li>
+              </ul>
+            </div>
+  
+            <div class="product-sizes">
+              <h3>Selecione o Tamanho</h3>
+              <select id="size-select" name="sizes">
+                <option value="small">P</option>
+                <option value="medium" selected>M</option>
+                <option value="large">G</option>
+              </select>
+            </div>
+  
+            <button class="add-to-cart-btn">Adicionar ao Carrinho</button>
+          </div>
+  
+          <div class="product-description">
+            <h2>Detalhes do Produto</h2>
+            <p>Camisa de alta qualidade, feita com material nobre e importado.</p>
+          </div>
         </div>
-    </div>
+      </div>
 
     <!-- secao de transparencia -->
     <div class="transparency-section">
         <div class="transparency-box">
-            <h2>Transparencia total</h2>
+            <h2>Transparência Total</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit sapiente, eius excepturi alias nesciunt perspiciatis dolor molestias similique quaerat non animi! Inventore nemo blanditiis laudantium magnam? Vitae, iure officiis.
+            Compreender e valorizar a importância de nossa vestimenta é
+            fundamental no aprendizado de viver com menos. Quanto mais sabemos,
+            melhores decisões fazemos, mais valorizamos o que temos, e como
+            resultado - menos necessitaremos.
             </p>
         </div>
+        <div class="transparency-box">
+            <h3>Custo de Produção</h3>
+            <p>Detalhes todos os custos que temos para criar o produto.</p>
+            <a href="#">Ver detalhamento de custos</a>
+        </div>
+        <div class="transparency-box">
+            <h3>Rastreabilidade</h3>
+            <p>Saiba de onde vem o material para as suas roupas.</p>
+            <a href="#">Mostrar origem do produto</a>
+        </div>
+        <div class="transparency-box">
+            <h3>Impacto de CO2</h3>
+            <p>Veja a redução de impacto ambiental que tivemos no ano de 2024.</p>
+            <a href="#">Mostrar estudo</a>
+        </div>
     </div>
+    
 </body>
 </html>
