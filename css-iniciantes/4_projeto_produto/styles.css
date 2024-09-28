@@ -52,3 +52,143 @@ i:hover {
 .header-icons i {
     transition: 0.4s;
 }
+
+/* corpo do site */
+.product-container {
+    display: flex;
+    max-width: 1200px;
+    margin: o auto;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.product-image {
+    flex: 3;
+
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 2;
+}
+
+.product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-rating-and-reviews {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product-rating i {
+    color: #f8ce0b;
+}
+
+.reviews-count {
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-colors h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.color-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.color-option:hover {
+    border-color: #000;
+}
+
+.color-option:hover {
+    border-color: #000;
+}
+
+.product-sizes {
+    margin-bottom: 20px;
+}
+
+.product-sizes select {
+    padding: 5px;
+    font-size: 18px;
+}
+
+.add-to-cart-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333;
+}
+
+.product-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* rodape */
+.transparency-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.transparency-box {
+    padding: 20px;
+}
+
+.transparency-box h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.transparency-box p {
+    font-size: 14px;
+    color: #666;
+}
+
+.transparency-box a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.transparency-box a:hover {
+    text-decoration: underline;
+}
