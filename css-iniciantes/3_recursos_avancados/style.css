@@ -165,3 +165,49 @@ html {
     color: var(--text-color);
     padding: var(--padding-value);
 }
+
+/* 8 - grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-container div {
+    background-color: red;
+}
+
+.grid-container {
+    gap: 10px;
+}
+
+/* grid areas */
+.grid-container-area {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+.header {
+    grid-column: 1 / -1;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.aside {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: red;
+}
+
+.main-container {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: blue;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: red;
+}
