@@ -115,6 +115,7 @@ html {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
+/* 6 - z index */
 .z-index-box {
     position: relative;
     height: 300px;
