@@ -84,3 +84,22 @@ button {
 .capitalize {
     text-transform: capitalize;
 }
+
+/* exercicio 6 */
+.background-div {
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    background-image: url('img/user_a.webp');
+    opacity: .5;
+    background-size: cover;
+}
+
+.background-container {
+    position: relative;
+}
+
+.background-container h2 {
+    position: absolute;
+    top: 0;
+}
