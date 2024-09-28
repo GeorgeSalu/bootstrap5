@@ -53,3 +53,16 @@
     padding: 10px;
     width: 300px;
 }
+
+/* exercicio 4 */
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
