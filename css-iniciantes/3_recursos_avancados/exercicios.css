@@ -103,3 +103,22 @@ button {
     position: absolute;
     top: 0;
 }
+
+/* exercicio 7 */
+.horizontal-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    background-color: #ccc;
+
+}
+
+.horizontal-menu li {
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.horizontal-menu li:hover {
+    background-color: #ddd;
+}
