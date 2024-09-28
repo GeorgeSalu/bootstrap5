@@ -30,3 +30,18 @@
 .div3:hover {
     background-color: green;
 }
+
+/* exercicio 2 */
+.p1 {
+    border: 1px solid red;
+}
+
+.p2 {
+    border: 2px dashed blue;
+    border-radius: 10px;
+}
+
+.p3 {
+    border: 3px dotted #333;
+    border-radius: 50px;
+}
