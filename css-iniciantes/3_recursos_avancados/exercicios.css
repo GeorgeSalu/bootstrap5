@@ -1,0 +1,32 @@
+/* exeercicio 1 */
+.div1,
+.div2,
+.div3 {
+    width: 200px;
+    height: 200px;
+    transition: 0.4s;
+}
+
+.div1 {
+    background-color: blue;
+}
+
+.div2 {
+    background-color: #321;
+}
+
+.div3 {
+    background-color: rgb(10, 100, 200);
+}
+
+.div1:hover {
+    background-color: green;
+}
+
+.div2:hover {
+    background-color: green;
+}
+
+.div3:hover {
+    background-color: green;
+}
