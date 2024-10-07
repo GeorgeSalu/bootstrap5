@@ -7,7 +7,7 @@
     <title>visibilidade</title>
     <style>
         div.border {
-            height: 150px;
+            height: 100px;
         }
     </style>
 </head>
@@ -16,5 +16,44 @@
     <div class="p-4 col-3 d-none d-lg-block d-block m-3 bg-primary"></div>
     <div class="p-4 col-3 d-lg-none d-block m-3 bg-success"></div>
     <div class="p-4 col-3  d-block m-3 bg-warning"></div>
+    <hr>
+    <header class="p-3 text-bg-dark d-print-none">
+        <div class="display-1">Cabeçalho</div>
+    </header>
+    <article class="container my-3">
+        <h1 class="mb-4">Titulo do artigo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus, in consequuntur quam autem magnam voluptatibus ullam natus, nihil reprehenderit nisi amet distinctio repellendus eos ratione officiis illum aperiam animi, eum harum quasi! Velit, odio. Provident reiciendis dolore impedit, consequatur repellat ab nemo suscipit natus perspiciatis corrupti, modi quas iusto?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus, in consequuntur quam autem magnam voluptatibus ullam natus, nihil reprehenderit nisi amet distinctio repellendus eos ratione officiis illum aperiam animi, eum harum quasi! Velit, odio. Provident reiciendis dolore impedit, consequatur repellat ab nemo suscipit natus perspiciatis corrupti, modi quas iusto?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus, in consequuntur quam autem magnam voluptatibus ullam natus, nihil reprehenderit nisi amet distinctio repellendus eos ratione officiis illum aperiam animi, eum harum quasi! Velit, odio. Provident reiciendis dolore impedit, consequatur repellat ab nemo suscipit natus perspiciatis corrupti, modi quas iusto?
+        </p>
+        <p class="d-none d-print-block">fonte meu site</p>
+    </article>
+    <hr>
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <div class="p-4 col-3 m-3 bg-success invisible"></div>
+    <div class="p-4 col-3 m-3 bg-primary"></div>
+    <hr>
+    <!-- transbordo de conteudo -->
+    <div class="container bg-info mt-3">
+        <div class="row">
+            <div class="border p-2 col-3 overflow-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati perferendis deleniti officia possimus at, eligendi amet incidunt quibusdam, inventore veniam laborum recusandae quis ipsum consequuntur laboriosam dolore hic esse ipsa.
+            </div>
+            <div class="border p-2 col-3 overflow-hidden">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore eum dolore debitis possimus libero animi labore cumque neque dolorum aut sunt exercitationem, recusandae atque eaque deleniti quis commodi omnis voluptate?
+            </div>
+            <div class="border p-2 col-3 overflow-visible">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure est delectus dicta placeat necessitatibus modi molestiae mollitia voluptatum repudiandae, error maxime dolor harum doloremque. Ducimus cupiditate eligendi sit. Culpa.
+            </div>
+            <div class="border p-2 col-3 overflow-scroll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iure est delectus dicta placeat necessitatibus modi molestiae mollitia voluptatum repudiandae, error maxime dolor harum doloremque. Ducimus cupiditate eligendi sit. Culpa.
+            </div>
+        </div>
+    </div>
 </body>
 </html>
