@@ -3,5 +3,5 @@
 ## Tecnologias usadas:
 
 - Bootstrap
-- Js/JQuery
+- Javascript/JQuery
 - CSS/FlexBox
