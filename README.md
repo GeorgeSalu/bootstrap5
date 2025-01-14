@@ -1,5 +1,7 @@
-## front-end
+# Front-end
 
-    Bootstrap 5.0.+, JQuery 3.0.+, CSS
+## Tecnologias usadas:
 
-    
+- Bootstrap
+- JQuery
+- CSS
