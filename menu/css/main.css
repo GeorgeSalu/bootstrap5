@@ -196,7 +196,12 @@ a.navbar-brand {
 }
 
 .card-icon {
-    padding-bottom: 5px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-text {
@@ -209,4 +214,12 @@ a.navbar-brand {
     font-size: 22px;
     color: var(--color-black);
     margin-bottom: 10px;
+}
+
+.background-servicos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-2.png);
 }
