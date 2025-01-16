@@ -11,7 +11,7 @@
 :root {
     --color-background: #fffdf7;
     --color-black: #212121;
-    --color-black-heavy: #0000;
+    --color-black-heavy: #000;
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
     --color-primary: #ffbf00;
@@ -230,6 +230,14 @@ a.navbar-brand {
     padding-bottom: 150px;
 }
 
+.carpadio .background-cardapio {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-image: url(../img/bg-icons-1.png);
+}
+
 .container-menu {
     margin-bottom: 40px;
 }
@@ -259,7 +267,7 @@ a.navbar-brand {
 }
 
 .card-item .add-carrinho {
-    
+    display: none;
     text-align: center;
     height: 30px;
     justify-content: center;
@@ -303,3 +311,21 @@ a.navbar-brand {
     background-color: var(--color-black-heavy);
     margin-left: 15px;
 }
+
+.card-item:hover {
+    background-color: var(--color-primary);
+}
+
+.card-item:hover .title-produto {
+    display: none;
+}
+
+.card-item:hover .add-carrinho {
+    display: flex;
+}
+
+.card-item:hover .price-produto {
+    color: var(--color-black-heavy) !important;
+    margin-top: 20px;
+}
+
