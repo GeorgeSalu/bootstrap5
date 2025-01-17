@@ -18,7 +18,6 @@ cardapio.metodos = {
     obterItensCardapio: (categoria = 'burgers') => {
 
         var filtro = MENU[categoria]
-        console.log(filtro);
 
         $('#itensCardapio').html('')
 
