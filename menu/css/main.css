@@ -500,6 +500,19 @@ footer {
     overflow-x: hidden;
 }
 
+.m-body::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+.m-body::-webkit-scrollbar-thumb {
+    background: var(--color-white);
+}
+
+.m-body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .etapas {
     display: flex;
 }
@@ -594,3 +607,19 @@ footer {
     background-color: var(--color-red);
     margin-left: 15px;
 }
+
+.texto-entraga {
+    color: var(--color-separate);
+}
+
+.container-total .texto-total {
+    color: var(--color-black);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container-total .valor-total {
+    color: var(--color-primary);
+    font-size: 24px;
+}
+
