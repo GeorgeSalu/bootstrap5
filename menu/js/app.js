@@ -23,8 +23,9 @@ cardapio.metodos = {
 
         $.each(filtro, (i, e) => {
 
-            let temp = cardapio.templates.item.replace(/\${img}/g, e.img).replace(/\${nome}/g, e.name)
-                                .replace(/\${preco}/g, e.price.toFixed(2).replace('.',','));
+            let temp = cardapio.templates.item.replace(/\${img}/g, e.img)
+                                              .replace(/\${nome}/g, e.name)
+                                              .replace(/\${preco}/g, e.price.toFixed(2).replace('.',','));
 
 
             $('#itensCardapio').append(temp);
