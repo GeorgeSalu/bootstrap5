@@ -22,6 +22,7 @@ cardapio.metodos = {
         if (!vermais) {
 
             $('#itensCardapio').html('');
+            $('#btnVerMais').removeClass('hidden');
         }
 
 
@@ -57,7 +58,9 @@ cardapio.metodos = {
     verMais: () => {
 
         var ativo = $(".container-menu a.active").attr('id').split('menu-')[1];
-        cardapio.metodos.obterItensCardapio('', true);
+        cardapio.metodos.obterItensCardapio(ativo, true);
+
+        $('#btnVerMais').addClass('hidden');
 
     }
 
