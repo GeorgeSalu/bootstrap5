@@ -98,7 +98,7 @@ cardapio.metodos = {
             // obter a cartegoria ativa
             var categoria = $(".container-menu a.active").attr('id').split('menu-')[1];
 
-            // obtem a lusta de itens
+            // obtem a lista de itens
             let filtro = MENU[categoria];
 
             // obtem o item 
