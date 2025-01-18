@@ -67,13 +67,23 @@ cardapio.metodos = {
     },
 
     // diminuir a quantidade do item no cardapio
-    diminuirQuantidade: () => {
+    diminuirQuantidade: (id) => {
+
+        let qntdAtual = parseInt($("#qntd-"+id).text());
+
+        if(qntdAtual > 0) {
+
+            $("#qntd-"+id).text(qntdAtual - 1)
+        }
 
     },
 
     // aumentar a quantidade do item no cardapio
-    diminuirQuantidade: () => {
+    aumentarQuantidade: (id) => {
 
+        let qntdAtual = parseInt($("#qntd-"+id).text());
+
+        $("#qntd-"+id).text(qntdAtual + 1)
     }
 
 }
@@ -93,11 +103,11 @@ cardapio.templates = {
                     <b>R$ \${preco}</b>
                 </p>
                 <div class="add-carrinho">
-                    <span class="btn-menos">
+                    <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidade('\${id}')">
                         <i class="fas fa-minus"></i>
                     </span>
-                    <span class="add-numero-itens">0</span>
-                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
+                    <span class="add-numero-itens" id="qntd-\${id}" >0</span>
+                    <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidade('\${id}')"><i class="fas fa-plus"></i></span>
                     <span class="btn btn-add"><i class="fas fa-shopping-bag"></i></span>
                 </div>
             </div>
