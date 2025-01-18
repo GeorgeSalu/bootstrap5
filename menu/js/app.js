@@ -30,7 +30,8 @@ cardapio.metodos = {
 
             let temp = cardapio.templates.item.replace(/\${img}/g, e.img)
                                               .replace(/\${nome}/g, e.name)
-                                              .replace(/\${preco}/g, e.price.toFixed(2).replace('.',','));
+                                              .replace(/\${preco}/g, e.price.toFixed(2).replace('.',','))
+                                              .replace(/\${id}/g, e.id);
 
             // botao ver mais foi clicado (12 itens)
             if (vermais && i >= 8  && i < 12) {
@@ -63,6 +64,16 @@ cardapio.metodos = {
 
         $('#btnVerMais').addClass('hidden');
 
+    },
+
+    // diminuir a quantidade do item no cardapio
+    diminuirQuantidade: () => {
+
+    },
+
+    // aumentar a quantidade do item no cardapio
+    diminuirQuantidade: () => {
+
     }
 
 }
@@ -71,7 +82,7 @@ cardapio.templates = {
 
     item: `
         <div class="col-3 mb-5">
-            <div class="card card-item">
+            <div class="card card-item" id="\${id}">
                 <div class="img-produto">
                     <img src="\${img}" />
                 </div>
