@@ -131,7 +131,7 @@ cardapio.metodos = {
 
     },
 
-    // atualiza badge de totais dos botoes do carrinho
+    // atualiza badge de totais de itens nos botoes do carrinho
     atualizarBadgeTotal: () => {
 
         var total = 0;
