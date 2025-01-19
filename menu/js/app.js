@@ -131,7 +131,8 @@ cardapio.metodos = {
 
     },
 
-    // atualiza badge de totais de itens nos botoes do carrinho
+    // atualiza badge de totais de itens nos botoes do carrinho (botao de carrinho do topo da pagina 
+    // e botao fixo que aparece quando existe pelo menos um iten no carringho)
     atualizarBadgeTotal: () => {
 
         var total = 0;
