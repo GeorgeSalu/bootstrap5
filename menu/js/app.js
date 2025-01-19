@@ -155,7 +155,7 @@ cardapio.metodos = {
 
     },
 
-
+    // abrir modal do carrrinho
     abrirCarrinho: (abrir) => {
 
         if(abrir) {
@@ -168,7 +168,7 @@ cardapio.metodos = {
 
     },
 
-    
+    // toast de mensagem 
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
         let id = Math.floor(Date.now() * Math.random()).toString();
