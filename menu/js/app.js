@@ -156,7 +156,7 @@ cardapio.metodos = {
 
     },
 
-    // abrir modal do carrrinho
+    // abrir ou fechar modal do carrrinho
     abrirCarrinho: (abrir) => {
 
         if(abrir) {
