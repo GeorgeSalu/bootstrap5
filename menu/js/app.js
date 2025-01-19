@@ -122,11 +122,35 @@ cardapio.metodos = {
                 }
 
                 $("#qntd-"+id).text(0)
-
-
+                
+                cardapio.metodos.atualizarBadgeTotal();
             }
 
         }
+
+    },
+
+    // atualiza badge de totais dos botoes do carrinho
+    atualizarBadgeTotal: () => {
+
+        var total = 0;
+
+        $.each(MEU_CARRINHO, (i, e) => {
+
+            total += e.qntd;
+        })
+
+        if(total > 0) {
+
+            $(".botao-carrinho").removeClass('hidden')
+            $(".container-total-carrinho").removeClass('hidden')
+        } else {
+
+            $(".botao-carrinho").addClass('hidden')
+            $(".container-total-carrinho").addClass('hidden')
+        }
+
+        $('.badge-total-carrinho').html(total);
 
     }
 
