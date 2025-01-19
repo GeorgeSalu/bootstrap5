@@ -168,7 +168,7 @@ cardapio.metodos = {
 
     },
 
-    // toast de mensagem 
+    // toast de mensagem parametrizado
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
         let id = Math.floor(Date.now() * Math.random()).toString();
