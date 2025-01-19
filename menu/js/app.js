@@ -88,7 +88,7 @@ cardapio.metodos = {
         $("#qntd-"+id).text(qntdAtual + 1)
     },
 
-    // adicionar ao carrinho o item do cardapio
+    // adicionar ao carrinho o item do menu
     adicionarAoCarrinho: (id) => {
 
         let qntdAtual = parseInt($("#qntd-"+id).text());
