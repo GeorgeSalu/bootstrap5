@@ -58,7 +58,7 @@ cardapio.metodos = {
 
     },
 
-    // clique no botao de ver mais
+    // botao de ver mais, carrega mas itens do menu
     verMais: () => {
 
         var ativo = $(".container-menu a.active").attr('id').split('menu-')[1];
