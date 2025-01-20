@@ -169,6 +169,31 @@ cardapio.metodos = {
 
     },
 
+
+    carregarEtapa: (etapa) => {
+
+        if ( etapa == 1) {
+
+            $("#lblTituloEtapa").text('Seu carrinho: ')
+            $("#itensCarrinho").removeClass('hidden')
+            $("#localEntrega").addClass('hidden')
+            $("#resumoCarrinho").addClass('hidden')
+
+            $(".etapa").removeClass('active');
+            $(".etapa").removeClass('active');
+            $(".etapa").removeClass('active');
+        }
+
+        if ( etapa == 2) {
+            
+        }
+
+        if ( etapa == 3) {
+            
+        }
+
+    },
+
     // toast de mensagem parametrizado
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
