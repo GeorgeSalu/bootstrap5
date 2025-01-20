@@ -68,7 +68,7 @@ cardapio.metodos = {
 
     },
 
-    // diminuir a quantidade do item no cardapio
+    // diminuir a quantidade do item no painel que mostra a quantidade do item do menu que sera enviado ao carrinho
     diminuirQuantidade: (id) => {
 
         let qntdAtual = parseInt($("#qntd-"+id).text());
@@ -80,7 +80,7 @@ cardapio.metodos = {
 
     },
 
-    // aumentar a quantidade do item no cardapio
+    // aumentar a quantidade do item no painel que mostra a quantidade do item do menu que sera enviado ao carrinho
     aumentarQuantidade: (id) => {
 
         let qntdAtual = parseInt($("#qntd-"+id).text());
