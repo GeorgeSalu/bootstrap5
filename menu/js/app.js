@@ -170,7 +170,7 @@ cardapio.metodos = {
 
     },
 
-
+    // altera os texto e exibe os botoes das etapas
     carregarEtapa: (etapa) => {
 
         if ( etapa == 1) {
@@ -226,6 +226,7 @@ cardapio.metodos = {
 
     },
 
+    // voltar etapa do carrinho de compra
     voltarEtapa: () => {
 
         let etapa = $(".etapa.active").length;
