@@ -226,6 +226,13 @@ cardapio.metodos = {
 
     },
 
+    voltarEtapa: () => {
+
+        let etapa = $(".etapa.active").length;
+        cardapio.metodos.carregarEtapa(etapa - 1)
+
+    },
+
     // toast de mensagem parametrizado
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
