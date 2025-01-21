@@ -170,7 +170,7 @@ cardapio.metodos = {
 
     },
 
-    // altera os texto e exibe os botoes das etapas
+    // altera os texto e exibe os botoes das etapas do carrinho
     carregarEtapa: (etapa) => {
 
         if ( etapa == 1) {
