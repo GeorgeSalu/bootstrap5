@@ -289,8 +289,15 @@ cardapio.metodos = {
 
     },
 
+
+    // botaao remover item do carrinho
     removerItemCarrinho: (id) => {
 
+        MEU_CARRINHO = $.grep(MEU_CARRINHO, (e, i) => { return e.id != id });
+        cardapio.metodos.carregarCarrinho();
+
+        // atualiza o botao carrinho com a quantidade atualizada
+        cardapio.metodos.atualizarBadgeTotal();
     },
 
     // atualiza o carrinho com a quantidade atual
