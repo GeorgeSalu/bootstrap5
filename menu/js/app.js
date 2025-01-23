@@ -456,6 +456,18 @@ cardapio.metodos = {
             return;
         }
 
+        MEU_ENDERECO = {
+            cep: cep,
+            endereco: endereco,
+            bairro: bairro,
+            cidade: cidade,
+            uf: uf,
+            numero: numero,
+            complemento: complemento
+        }
+
+        cardapio.metodos.carregarEtapa(3);
+
     },
 
     // toast de mensagem parametrizado
