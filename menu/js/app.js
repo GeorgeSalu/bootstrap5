@@ -503,7 +503,7 @@ cardapio.metodos = {
 
     },
 
-    // atualiza o link do botao do whatsap
+    // atualiza o link do botao do whatsapp
     finalizarPedido: () => {
 
         if(MEU_CARRINHO.length > 0 && MEU_ENDERECO != null) {
