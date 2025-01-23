@@ -368,6 +368,37 @@ cardapio.metodos = {
         // verifica se o cep possui valor informado
         if (cep != "") {
 
+            // expressao regular para validar cep
+            var validacep = /^[0-9]{8}$/;
+
+            if(validacep.test(cep)) {
+
+                $.getJSON("https://viacep.com.br/ws/"+cep+"/json/?callback=?",function(dados) {
+
+                    if(!("erro" in dados)) {
+
+                        // atualizar os campos com os valores retornado
+                        $("#txtEndereco").val(dados.logradouro);
+                        $("#txtBairro").val(dados.bairro);
+                        
+                        $("#txtCidade").val(dados.localidade);
+                        $("#ddlUF").val(dados.uf);
+
+                        $("#txtNumero").focus();
+
+                    } else {
+
+                        cardapio.metodos.mensagem('cep nao encontrado, preencha as informações manualmente');
+                        $("#txtCep").focus();
+                    }
+
+                })
+
+            } else {
+
+                cardapio.metodos.mensagem('Formato do cep invalido');
+                $("#txtCep").focus();
+            }
 
         } else {
 
