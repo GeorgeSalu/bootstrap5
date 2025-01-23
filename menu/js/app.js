@@ -348,6 +348,18 @@ cardapio.metodos = {
 
     },
 
+    carregarEndereco: () => {
+
+        if(MEU_CARRINHO.length <= 0) {
+
+            cardapio.metodos.mensagem('seu carrinho esta vazio')
+            return;
+        }
+
+        cardapio.metodos.carregarEtapa(2);
+
+    },
+
     // toast de mensagem parametrizado
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
