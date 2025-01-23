@@ -497,6 +497,20 @@ cardapio.metodos = {
         $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`)
         $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade} - ${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} - ${MEU_ENDERECO.complemento}`)
 
+        cardapio.metodos.finalizarPedido();
+
+    },
+
+    // atualiza o link do botao do whatsap
+    finalizarPedido: () => {
+
+        if(MEU_CARRINHO.length > 0 && MEU_ENDERECO != null) {
+
+            var texto = 'Ola gostario de fazer um pedido: ';
+            texto += `\n*Itens do pedido:*\n\n${itens} `
+
+        }
+
     },
 
     // toast de mensagem parametrizado
