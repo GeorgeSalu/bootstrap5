@@ -360,6 +360,23 @@ cardapio.metodos = {
 
     },
 
+    buscarCep: () => {
+
+        // cria a variavel com o valor do cep
+        var cep = $("#txtCep").val().trim().replace(/\D/g, '');
+
+        // verifica se o cep possui valor informado
+        if (cep != "") {
+
+
+        } else {
+
+            cardapio.metodos.mensagem("Informe o cep, por favor");
+            $("#txtCep").focus();
+        }
+
+    },
+
     // toast de mensagem parametrizado
     mensagem: (texto, cor = 'red', tempo = 3500) => {
 
