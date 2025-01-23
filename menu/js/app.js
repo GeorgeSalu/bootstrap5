@@ -290,7 +290,7 @@ cardapio.metodos = {
     },
 
 
-    // botaao remover item do carrinho
+    // botao remover item do carrinho
     removerItemCarrinho: (id) => {
 
         MEU_CARRINHO = $.grep(MEU_CARRINHO, (e, i) => { return e.id != id });
