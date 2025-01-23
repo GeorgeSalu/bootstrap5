@@ -261,15 +261,47 @@ cardapio.metodos = {
 
     },
 
+    // diminuir quantidade do item no carrinho
     diminuirQuantidadeCarrinho: (id) => {
+
+        console.log("fui chamado")
+
+        let qntdAtual = parseInt($("#qntd-carrinho-"+id).text());
+
+        if(qntdAtual > 1) {
+
+            $("#qntd-carrinho-"+id).text(qntdAtual - 1);
+            cardapio.metodos.atualizarCarrinho(id, qntdAtual - 1);
+        } else {
+
+            cardapio.metodos.removerItemCarrinho(id);
+        }
 
     },
 
+    // aumentar quantidade do item no carrinho
     aumentarQuantidadeCarrinho: (id) => {
+
+        let qntdAtual = parseInt($("#qntd-carrinho-"+id).text());
+
+        $("#qntd-carrinho-"+id).text(qntdAtual + 1);
+        cardapio.metodos.atualizarCarrinho(id, qntdAtual + 1);
 
     },
 
     removerItemCarrinho: (id) => {
+
+    },
+
+    // atualiza o carrinho com a quantidade atual
+    atualizarCarrinho:(id, qntd) => {
+
+        let objIndex = MEU_CARRINHO.findIndex((obj => obj.id == id))
+        MEU_CARRINHO[objIndex].qntd = qntd;
+
+
+        // atualiza o botao carrinho com a quantidade atualizada
+        cardapio.metodos.atualizarBadgeTotal();
 
     },
 
@@ -333,7 +365,7 @@ cardapio.templates = {
                 <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidadeCarrinho('\${id}')">
                     <i class="fas fa-minus"></i>
                 </span>
-                <span class="add-numero-itens" id="qntd-carrinho\${id}" >\${qntd}</span>
+                <span class="add-numero-itens" id="qntd-carrinho-\${id}" >\${qntd}</span>
                 <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
                 <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho('\${id}')"><i class="fas fa-times"></i></span>
             </div>
