@@ -543,7 +543,7 @@ footer {
     content: none;
 }
 
-.etapa.active .etapa.active::before {
+.etapa.active  {
     background-color: var(--color-primary);
 }
 
