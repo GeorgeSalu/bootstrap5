@@ -423,36 +423,43 @@ cardapio.metodos = {
 
         if(cep.length <= 0) {
             cardapio.metodos.mensagem('Informe o cep por favor');
+            $("#txtCep").focus()
             return;
         }
 
         if(endereco.length <= 0) {
             cardapio.metodos.mensagem('Informe o endereco por favor');
+            $("#txtEndereco").focus()
             return;
         }
 
         if(bairro.length <= 0) {
             cardapio.metodos.mensagem('Informe o bairro por favor');
+            $("#txtBairro").focus()
             return;
         }
 
         if(cidade.length <= 0) {
             cardapio.metodos.mensagem('Informe a cidade por favor');
+            $("#txtCidade").focus()
             return;
         }
 
         if(uf == '-1') {
             cardapio.metodos.mensagem('Informe a uf por favor');
+            $("#ddlUF").focus()
             return;
         }
 
         if(numero.length <= 0) {
             cardapio.metodos.mensagem('Informe o numero por favor');
+            $("#txtNumero").focus()
             return;
         }
 
         if(complemento.length <= 0) {
             cardapio.metodos.mensagem('Informe o complemento por favor');
+            $("#txtComplemento").focus()
             return;
         }
 
