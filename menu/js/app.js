@@ -507,7 +507,26 @@ cardapio.metodos = {
         if(MEU_CARRINHO.length > 0 && MEU_ENDERECO != null) {
 
             var texto = 'Ola gostario de fazer um pedido: ';
-            texto += `\n*Itens do pedido:*\n\n${itens} `
+            texto += `\n*Itens do pedido:*\n\n\${itens}`;
+            texto += `\n*Endereço de entrega:*`;
+            texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
+            texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
+            texto += `\n\n*Total (com entrega) : R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}*`;
+
+            var itens = '';
+
+            $.each(MEU_CARRINHO, (i, e) => {
+
+                itens += `*${e.qntd}x* ${e.name} ....... R$ ${e.price.toFixed(2).replace('.', ',')} \n`;
+
+                if((i + 1) == MEU_CARRINHO.length) {
+
+                    texto = texto.replace(/\${itens}/g, itens);
+
+                    console.log(texto)
+                }
+
+            })
 
         }
 
