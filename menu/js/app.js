@@ -245,10 +245,18 @@ cardapio.metodos = {
 
             $.each(MEU_CARRINHO, (i, e) => {
 
+                let temp = cardapio.templates.itemCarrinho.replace(/\${img}/g, e.img)
+                                                            .replace(/\${nome}/g, e.name)
+                                                            .replace(/\${preco}/g, e.price.toFixed(2).replace('.',','))
+                                                            .replace(/\${id}/g, e.id)
+                                                            .replace(/\${qntd}/g, e.qntd);
+
+                $("#itensCarrinho").append(temp);
             })          
 
         } else {
 
+            $("#itensCarrinho").html('<p class="carrinho-vazio"><i class="fa fa-shopping-bag"></i> Seu carrinho esta vazio</p>');
         }
 
     },
@@ -327,7 +335,7 @@ cardapio.templates = {
                 </span>
                 <span class="add-numero-itens" id="qntd-carrinho\${id}" >\${qntd}</span>
                 <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
-                <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho('\${id}')><i class="fas fa-times"></i></span>
+                <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho('\${id}')"><i class="fas fa-times"></i></span>
             </div>
         </div>
     `
