@@ -8,6 +8,8 @@ var MEU_CARRINHO = [];
 var VALOR_CARRINHO = 0;
 var VALOR_ENTREGA = 5;
 
+var CELULAR_EMPRESA = '5517991234567';
+
 var MEU_ENDERECO = null;
 
 cardapio.eventos = {
@@ -511,7 +513,7 @@ cardapio.metodos = {
             texto += `\n*Endereço de entrega:*`;
             texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
             texto += `\n${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} ${MEU_ENDERECO.complemento}`;
-            texto += `\n\n*Total (com entrega) : R$ ${VALOR_CARRINHO.toFixed(2).replace('.', ',')}*`;
+            texto += `\n\n*Total (com entrega) : R$ ${(VALOR_CARRINHO + VALOR_ENTREGA).toFixed(2).replace('.', ',')}*`;
 
             var itens = '';
 
@@ -523,7 +525,11 @@ cardapio.metodos = {
 
                     texto = texto.replace(/\${itens}/g, itens);
 
-                    console.log(texto)
+                    // converte a url
+                    let encode = encodeURI(texto);
+                    let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+
+                    $("#btnEtapaResumo").attr('href', URL)
                 }
 
             })
