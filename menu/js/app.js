@@ -15,7 +15,8 @@ var MEU_ENDERECO = null;
 cardapio.eventos = {
 
     init: () => {
-        cardapio.metodos.obterItensCardapio()
+        cardapio.metodos.obterItensCardapio();
+        cardapio.metodos.carregarBotaoReserva();
     }
 
 }
@@ -535,6 +536,19 @@ cardapio.metodos = {
             })
 
         }
+
+    },
+
+
+    // carrega o link do botao reserva
+    carregarBotaoReserva: () => {
+
+        var texto = 'Ola! gostaria de fazer uma *reserva*';
+
+        let encode = encodeURI(texto);
+        let URL = `https://wa.me/${CELULAR_EMPRESA}?text=${encode}`;
+
+        $("#btnReserva").attr('href', URL)
 
     },
 
