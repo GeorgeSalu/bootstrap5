@@ -8,10 +8,14 @@
 </head>
 <body>
 
-    <div>
+    <div id="jumbotron" class="container bg-primary text-white p-4 rounded my-4">
         <h1>cfb cursos</h1>
         <hr/>
         <p>cursos de desenvolvimento de software</p>
+    </div>
+    <div class="container">
+        <button onclick="document.getElementById('jumbotron').classList.remove('invisible')">Mostrar</button>
+        <button onclick="document.getElementById('jumbotron').classList.add('invisible')">Ocultar</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
