@@ -8,41 +8,41 @@
 </head>
 <body>
 
-    <div id="banner">
-        <div id="indicadores">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
+    <div id="banner" class="carousel slide" data-bs-ride="carousel">
+
+        <div id="indicadores" class="carousel-indicators">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="4"></button>
         </div>
 
-        <div id="imagens">
-            <div>
-                <img src="paisagem1.jpg" />
+        <div id="imagens" class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="paisagem1.jpg" class="d-block w-100" />
             </div>
-            <div>
-                <img src="paisagem2.jpg" />
+            <div class="carousel-item">
+                <img src="paisagem2.jpg" class="d-block w-100" />
             </div>
-            <div>
-                <img src="paisagem3.jpg" />
+            <div class="carousel-item">
+                <img src="paisagem3.jpg" class="d-block w-100" />
             </div>
-            <div>
-                <img src="paisagem4.jpg" />
+            <div class="carousel-item">
+                <img src="paisagem4.jpg" class="d-block w-100" />
             </div>
-            <div>
-                <img src="paisagem5.jpg" />
+            <div class="carousel-item">
+                <img src="paisagem5.jpg" class="d-block w-100" />
             </div>
         </div>
 
-        <div id="controles">
-            <button type="button">
-                <span></span>
-            </button>
-            <button type="button">
-                <span></span>
-            </button>
-        </div>
+
+        <button type="button" class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
