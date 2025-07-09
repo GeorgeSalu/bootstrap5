@@ -8,23 +8,40 @@
 </head>
 <body>
     
-    <form>
-        <label>Nome:</label>
-        <input type="text" name="f_nome" >
+    <form class="p-3">
+        <div class="my-3">
+            <label class="form-label">Nome:</label>
+            <input class="form-control" type="text" name="f_nome" >
+        </div>
 
-        <label>Email:</label>
-        <input type="email" name="f_email" >
+        <div class="my-3">
+            <label class="form-label">Email:</label>
+            <input class="form-control " type="email" name="f_email" >
+        </div>
 
-        <label>Senha:</label>
-        <input type="password" name="f_senha" >
+        <div class="my-3">
+            <label class="form-label">Senha:</label>
+            <input class="form-control" type="password" name="f_senha" >
+        </div>
 
-        <label>Telefine:</label>
-        <input type="text" name="f_fone" >
+        <div class="my-3">
+            <label class="form-label">Selecione uma cor:</label>
+            <input class="form-control-color" type="color" name="f_senha" >
+        </div>
 
-        <label>Nascimento:</label>
-        <input type="date" name="f_nascimento" >
+        <div class="row">
+            <div class="col my-3">
+                <label class="form-label">Telefone:</label>
+                <input class="form-control" type="text" name="f_fone" >
+            </div>
+    
+            <div class="col my-3">
+                <label class="form-label">Nascimento:</label>
+                <input class="form-control" type="date" name="f_nascimento" >
+            </div>
+        </div>
 
-        <input type="submit" name="btn_enviar" value="enviar" />
+        <input class="btn btn-primary" type="submit" name="btn_enviar" value="enviar" />
     </form>
 
 </body>
