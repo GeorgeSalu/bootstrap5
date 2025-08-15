@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Quitanda Online :: Titulo da Pagina</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
@@ -17,176 +15,95 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
-<body style="min-width: 372px;">
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
-        <div class="container">
-            <a class="navbar-brand" href=""><strong>Quitanda Online</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="index.html">Principal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="contato.html">Contato</a>
-                    </li>
-                </ul>
+<body class="d-flex flex-column min-vh-100">
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm mb-3">
+            <div class="container">
+                <a class="navbar-brand" href=""><b>Quitanda Online</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="align-self-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="cadastro.html" class="nav-link text-white">
+                                    Logado como <b>Ricardo Maroquio</b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link text-white">Sair</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho"><small>5</small></span>
+                                <a href="carrinho.html" class="nav-link text-white">
+                                    <svg class="bi" width="24" height="24" fill="currentColor">
+                                        <use xlink:href="/bi.svg#cart3"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="align-self-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="cadastro.html">Quero Me Cadastrar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Entrar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-white">
-                            <svg class="bi" width="24" height="24" fill="currentColor">
-                                <use xlink:href="/bi.svg#cart3"></use>
-                            </svg>
+        </nav>
+
+        <main class="flex-fill">
+
+        </main>
+
+        <footer class="border-top text-muted bg-light mt-auto">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; 2020 - Quitanda Online Ltda ME<br>
+                        Rua Virtual Inexistente, 171, Compulândia/PC <br>
+                        CPNJ 99.999.999/0001-99
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="privacidade.html" class="text-decoration-none text-dark">
+                            Política de Privacidade
+                        </a><br>
+                        <a href="termos.html" class="text-decoration-none text-dark">
+                            Termos de Uso
+                        </a><br>
+                        <a href="quemsomos.html" class="text-decoration-none text-dark">
+                            Quem Somos
+                        </a><br>
+                        <a href="trocas.html" class="text-decoration-none text-dark">
+                            Trocas e Devoluções
                         </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <main>
-        <div class="container">
-            <h1>Titulo da Pagina</h1>
-            <hr>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet dolore amet consectetur magnam
-                earum provident molestiae reiciendis doloremque suscipit dolorem eius quod iusto voluptates, tempora
-                repellendus unde cum sapiente! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate optio
-                perferendis similique consequatur soluta quasi sequi tempore eius maxime, porro quis, tenetur omnis
-                nesciunt eaque quia perspiciatis dolorem dignissimos dolorum? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolorum consequuntur similique laborum corporis cumque nesciunt, ipsam iure quas,
-                tempora delectus blanditiis ad consequatur? Iure mollitia dolore voluptatibus nobis nemo odio?
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae omnis, aliquid quas veritatis
-                dolor corrupti at culpa aliquam sint incidunt. Totam eum quisquam numquam debitis eius minus a error ad.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero sequi quis cumque quibusdam
-                architecto natus molestiae officiis quae odio dicta ad laborum, est vitae officia iure sit in excepturi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quisquam quibusdam officiis placeat
-                soluta aliquid dolorum et, aut labore alias nam repudiandae voluptates laborum suscipit mollitia
-                perferendis iusto. Ipsa?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero officia magni, eum culpa id alias minus
-                quae, excepturi necessitatibus aliquid laboriosam expedita tempora odit consectetur adipisci! Saepe
-                quidem labore eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptate
-                necessitatibus tempore sint nam nihil sapiente. Ducimus quos modi eos illo magnam quae doloribus
-                repellendus? Voluptatum magni accusantium tempora vel! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Itaque, ab? Dolore optio hic inventore animi quis illum quo pariatur eligendi eum,
-                labore, neque, enim sit tempore consequatur! Accusamus, reprehenderit quo?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet dolore amet consectetur magnam
-                earum provident molestiae reiciendis doloremque suscipit dolorem eius quod iusto voluptates, tempora
-                repellendus unde cum sapiente! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate optio
-                perferendis similique consequatur soluta quasi sequi tempore eius maxime, porro quis, tenetur omnis
-                nesciunt eaque quia perspiciatis dolorem dignissimos dolorum? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolorum consequuntur similique laborum corporis cumque nesciunt, ipsam iure quas,
-                tempora delectus blanditiis ad consequatur? Iure mollitia dolore voluptatibus nobis nemo odio?
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae omnis, aliquid quas veritatis
-                dolor corrupti at culpa aliquam sint incidunt. Totam eum quisquam numquam debitis eius minus a error ad.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero sequi quis cumque quibusdam
-                architecto natus molestiae officiis quae odio dicta ad laborum, est vitae officia iure sit in excepturi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quisquam quibusdam officiis placeat
-                soluta aliquid dolorum et, aut labore alias nam repudiandae voluptates laborum suscipit mollitia
-                perferendis iusto. Ipsa?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero officia magni, eum culpa id alias minus
-                quae, excepturi necessitatibus aliquid laboriosam expedita tempora odit consectetur adipisci! Saepe
-                quidem labore eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptate
-                necessitatibus tempore sint nam nihil sapiente. Ducimus quos modi eos illo magnam quae doloribus
-                repellendus? Voluptatum magni accusantium tempora vel! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Itaque, ab? Dolore optio hic inventore animi quis illum quo pariatur eligendi eum,
-                labore, neque, enim sit tempore consequatur! Accusamus, reprehenderit quo?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eveniet dolore amet consectetur magnam
-                earum provident molestiae reiciendis doloremque suscipit dolorem eius quod iusto voluptates, tempora
-                repellendus unde cum sapiente! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate optio
-                perferendis similique consequatur soluta quasi sequi tempore eius maxime, porro quis, tenetur omnis
-                nesciunt eaque quia perspiciatis dolorem dignissimos dolorum? Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolorum consequuntur similique laborum corporis cumque nesciunt, ipsam iure quas,
-                tempora delectus blanditiis ad consequatur? Iure mollitia dolore voluptatibus nobis nemo odio?
-            </p>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae omnis, aliquid quas veritatis
-                dolor corrupti at culpa aliquam sint incidunt. Totam eum quisquam numquam debitis eius minus a error ad.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem libero sequi quis cumque quibusdam
-                architecto natus molestiae officiis quae odio dicta ad laborum, est vitae officia iure sit in excepturi.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus enim quisquam quibusdam officiis placeat
-                soluta aliquid dolorum et, aut labore alias nam repudiandae voluptates laborum suscipit mollitia
-                perferendis iusto. Ipsa?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero officia magni, eum culpa id alias minus
-                quae, excepturi necessitatibus aliquid laboriosam expedita tempora odit consectetur adipisci! Saepe
-                quidem labore eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptate
-                necessitatibus tempore sint nam nihil sapiente. Ducimus quos modi eos illo magnam quae doloribus
-                repellendus? Voluptatum magni accusantium tempora vel! Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Itaque, ab? Dolore optio hic inventore animi quis illum quo pariatur eligendi eum,
-                labore, neque, enim sit tempore consequatur! Accusamus, reprehenderit quo?
-            </p>
-        </div>
-    </main>
-
-    <div style="height: 273px;" class="d-block d-md-none"></div>
-    <div style="height: 153px;" class="d-none d-md-block d-lg-none"></div>
-    <div style="height: 129px;" class="d-none d-lg-block"></div>
-
-    <footer class="border-top text-muted bg-light mt-auto">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-12 col-md-4 text-center">
-                    &copy; 2020 - Quitanda Online Ltda ME<br>
-                    Rua Virtual Inexistente, 171, Compulândia/PC <br>
-                    CPNJ 99.999.999/0001-99
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <a href="privacidade.html" class="text-decoration-none text-dark">
-                        Política de Privacidade
-                    </a><br>
-                    <a href="termos.html" class="text-decoration-none text-dark">
-                        Termos de Uso
-                    </a><br>
-                    <a href="quemsomos.html" class="text-decoration-none text-dark">
-                        Quem Somos
-                    </a><br>
-                    <a href="trocas.html" class="text-decoration-none text-dark">
-                        Trocas e Devoluções
-                    </a>
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <a href="contato.html" class="text-decoration-none text-dark">
-                        Contato pelo Site
-                    </a><br>
-                    E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
-                        email@dominio.com
-                    </a><br>
-                    Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
-                        (28) 99999-0000
-                    </a>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="contato.html" class="text-decoration-none text-dark">
+                            Contato pelo Site
+                        </a><br>
+                        E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+                            email@dominio.com
+                        </a><br>
+                        Telefone: <a href="phone:28999990000" class="text-decoration-none text-dark">
+                            (28) 99999-0000
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
+    
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
