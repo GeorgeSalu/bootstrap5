@@ -2,7 +2,8 @@
 
 ## Tecnologias usadas:
 
+- HTML
 - Bootstrap 5
-- Javascript/JQuery
+- JavaScript/JQuery
 - CSS/FlexBox
 - NodeJs
